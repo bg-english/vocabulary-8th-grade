@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary – Language Arts 8th Grade 2026</title>
 <style>
+  /* ── Shared responsive card style ── */
   @media (max-width: 600px) {
     .vocab-card-body {
       flex-direction: column !important;
@@ -9,7 +16,106 @@
       max-width: 100% !important;
     }
   }
+
+  /* ── Navigation bar ── */
+  body {
+    margin: 0;
+    padding: 0;
+    background: #F4F6FA;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  #vocab-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #1A1A2E;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 10px 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+    border-bottom: 3px solid #F5C300;
+    align-items: center;
+  }
+
+  #vocab-nav .nav-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 8px;
+    white-space: nowrap;
+  }
+
+  .nav-btn {
+    background: rgba(255,255,255,0.07);
+    border: 1.5px solid rgba(255,255,255,0.15);
+    border-radius: 24px;
+    color: rgba(255,255,255,0.75);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .nav-btn:hover {
+    background: rgba(245,195,0,0.18);
+    border-color: rgba(245,195,0,0.5);
+    color: #F5C300;
+  }
+
+  .nav-btn.active {
+    background: #F5C300;
+    border-color: #F5C300;
+    color: #1A1A2E;
+  }
+
+  .nav-btn.coming-soon {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  /* ── Vocab sections ── */
+  .vocab-section {
+    display: none;
+    padding: 28px 16px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .vocab-section.visible {
+    display: block;
+  }
+
+  /* ── Coming Soon placeholder ── */
+  .coming-soon-placeholder {
+    text-align: center;
+    padding: 80px 20px;
+    color: #1A3A8F;
+  }
+  .coming-soon-placeholder .big-emoji { font-size: 72px; margin-bottom: 20px; }
+  .coming-soon-placeholder h2 { font-size: 28px; font-weight: 900; margin: 0 0 12px; }
+  .coming-soon-placeholder p  { font-size: 15px; color: #555; max-width: 420px; margin: 0 auto; line-height: 1.7; }
 </style>
+</head>
+<body>
+
+<!-- ══ NAVIGATION BAR ══ -->
+<div id="vocab-nav">
+  <span class="nav-label">📖 Vocabulary</span>
+  <button class="nav-btn active"   onclick="showVocab(1,this)">#1 · Media &amp; Communication</button>
+  <button class="nav-btn"          onclick="showVocab(2,this)">#2 · Time Conjunctions</button>
+  <button class="nav-btn" onclick="showVocab(3,this)">#3 · Personal Qualities</button>
+  <button class="nav-btn" onclick="showVocab(4,this)">#4 · Phrasal Verbs</button>
+</div>
+
+<!-- ══ VOCABULARY #1 ══ -->
+<section id="vocab-1" class="vocab-section visible">
 <div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
 
   <!-- HERO -->
@@ -569,5 +675,1165 @@
     <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation of each word. Then try to use at least <strong style="color:#F5C300;">5 of these words</strong> in your Speaking Project presentation!</p>
     <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">🔗 dictionary.cambridge.org</a>
   </div>
+
+</div>
+</section>
+
+<!-- ══ VOCABULARY #2 ══ -->
+<section id="vocab-2" class="vocab-section">
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
+
+  <!-- HERO -->
+  <div style="background:linear-gradient(135deg,#1A3A8F 0%,#0d2260 55%,#CC1F27 100%);border-radius:14px;overflow:hidden;margin-bottom:28px;position:relative;">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(-55deg,transparent,transparent 24px,rgba(255,255,255,0.025) 24px,rgba(255,255,255,0.025) 48px);"></div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;padding:28px 36px 0;position:relative;z-index:1;">
+      <div style="padding-bottom:28px;">
+        <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#F5C300;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Language Arts · 8th Grade · 2026</div>
+        <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">📖 Vocabulary <span style="color:#F5C300;">#2</span></h1>
+        <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">The Language of Time &amp; Sequence</div>
+        <div style="font-size:12px;color:rgba(212,228,255,0.8);margin-top:5px;">11 words · Cambridge Dictionary Definitions · Time Conjunctions</div>
+        <div style="margin-top:16px;">
+          <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">⏱️ Grammar Unit · Time Connectors</div>
+        </div>
+      </div>
+      <!-- Clock / time SVG illustration -->
+      <div style="padding-bottom:0;flex-shrink:0;">
+        <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" style="width:140px;height:140px;filter:drop-shadow(0 8px 20px rgba(0,0,0,0.35));">
+          <circle cx="80" cy="80" r="72" fill="#0d2260" stroke="#F5C300" stroke-width="4"/>
+          <circle cx="80" cy="80" r="65" fill="#1A3A8F"/>
+          <!-- Clock ticks -->
+          <line x1="80" y1="18" x2="80" y2="28" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+          <line x1="80" y1="132" x2="80" y2="142" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+          <line x1="18" y1="80" x2="28" y2="80" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+          <line x1="132" y1="80" x2="142" y2="80" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+          <line x1="34" y1="34" x2="41" y2="41" stroke="rgba(245,195,0,0.5)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="119" y1="119" x2="126" y2="126" stroke="rgba(245,195,0,0.5)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="126" y1="34" x2="119" y2="41" stroke="rgba(245,195,0,0.5)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="41" y1="119" x2="34" y2="126" stroke="rgba(245,195,0,0.5)" stroke-width="2" stroke-linecap="round"/>
+          <!-- Hour hand pointing to ~10 -->
+          <line x1="80" y1="80" x2="52" y2="46" stroke="white" stroke-width="4" stroke-linecap="round"/>
+          <!-- Minute hand pointing to ~2 -->
+          <line x1="80" y1="80" x2="106" y2="44" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+          <!-- Second hand -->
+          <line x1="80" y1="80" x2="80" y2="30" stroke="#CC1F27" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="80" cy="80" r="5" fill="white"/>
+          <circle cx="80" cy="80" r="3" fill="#CC1F27"/>
+        </svg>
+      </div>
+    </div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+  </div>
+
+  <!-- INTRO TIP -->
+  <div style="background:#FFFDF0;border:1.5px solid #F5C300;border-left:6px solid #F5C300;border-radius:8px;padding:16px 22px;margin-bottom:24px;font-size:13.5px;color:#333;line-height:1.8;">
+    <strong style="color:#1A3A8F;">💡 How to study this vocabulary:</strong> These words connect two actions or events in time. Study the <strong>meaning</strong>, then look at the <strong>example sentence</strong> and try to write your own. Pay attention to which action comes <em>first</em> and which comes <em>second</em>!
+  </div>
+
+  <!-- VOCAB CARDS -->
+  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+
+    <!-- 1. AFTER -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">1</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">After</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8edf8" rx="8"/>
+            <!-- Timeline arrow -->
+            <line x1="15" y1="55" x2="148" y2="55" stroke="#1A3A8F" stroke-width="2.5" stroke-linecap="round"/>
+            <polygon points="148,50 158,55 148,60" fill="#1A3A8F"/>
+            <!-- Event A (first) -->
+            <circle cx="45" cy="55" r="10" fill="#CC1F27" stroke="white" stroke-width="2"/>
+            <text x="45" y="59" font-size="10" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">A</text>
+            <rect x="28" y="22" width="34" height="20" fill="#CC1F27" rx="4"/>
+            <text x="45" y="31" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">Dinner</text>
+            <text x="45" y="39" font-size="6.5" fill="white" font-family="Arial" text-anchor="middle">finishes</text>
+            <line x1="45" y1="42" x2="45" y2="45" stroke="#CC1F27" stroke-width="1.5"/>
+            <!-- Event B (second) -->
+            <circle cx="115" cy="55" r="10" fill="#1A6B3A" stroke="white" stroke-width="2"/>
+            <text x="115" y="59" font-size="10" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">B</text>
+            <rect x="97" y="68" width="36" height="20" fill="#1A6B3A" rx="4"/>
+            <text x="115" y="77" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">Dessert</text>
+            <text x="115" y="85" font-size="6.5" fill="white" font-family="Arial" text-anchor="middle">is served</text>
+            <line x1="115" y1="65" x2="115" y2="68" stroke="#1A6B3A" stroke-width="1.5"/>
+            <!-- AFTER label -->
+            <rect x="63" y="44" width="34" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="54" font-size="8" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">AFTER</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            following in time; at a later time than something else.
+          </p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She went to bed <strong>after</strong> she finished her homework.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. AS -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div style="background:#CC1F27;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">2</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">As</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fdeaea" rx="8"/>
+            <!-- Two overlapping circles showing simultaneity -->
+            <circle cx="58" cy="55" r="36" fill="rgba(26,58,143,0.15)" stroke="#1A3A8F" stroke-width="2"/>
+            <circle cx="102" cy="55" r="36" fill="rgba(204,31,39,0.15)" stroke="#CC1F27" stroke-width="2"/>
+            <!-- Overlap highlight -->
+            <ellipse cx="80" cy="55" rx="16" ry="30" fill="rgba(245,195,0,0.35)"/>
+            <!-- Labels -->
+            <text x="42" y="50" font-size="7" fill="#1A3A8F" font-family="Arial" font-weight="bold" text-anchor="middle">Singing</text>
+            <text x="42" y="60" font-size="6.5" fill="#1A3A8F" font-family="Arial" text-anchor="middle">in shower</text>
+            <text x="118" y="50" font-size="7" fill="#CC1F27" font-family="Arial" font-weight="bold" text-anchor="middle">Getting</text>
+            <text x="118" y="60" font-size="6.5" fill="#CC1F27" font-family="Arial" text-anchor="middle">dressed</text>
+            <text x="80" y="52" font-size="8" fill="#8B6914" font-family="Arial" font-weight="bold" text-anchor="middle">AT THE</text>
+            <text x="80" y="62" font-size="8" fill="#8B6914" font-family="Arial" font-weight="bold" text-anchor="middle">SAME TIME</text>
+            <!-- AS label at top -->
+            <rect x="62" y="8" width="36" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="18" font-size="9" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">AS</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            at the same time that another event is happening; while.
+          </p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">He listened to music <strong>as</strong> he walked to school.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. AS SOON AS -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div style="background:#1A6B3A;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">3</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">As soon as</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8f5e9" rx="8"/>
+            <!-- Timeline -->
+            <line x1="15" y1="60" x2="148" y2="60" stroke="#1A6B3A" stroke-width="2.5" stroke-linecap="round"/>
+            <polygon points="148,55 158,60 148,65" fill="#1A6B3A"/>
+            <!-- Event A -->
+            <circle cx="50" cy="60" r="9" fill="#CC1F27" stroke="white" stroke-width="2"/>
+            <text x="50" y="64" font-size="9" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">A</text>
+            <rect x="25" y="20" width="50" height="28" fill="#CC1F27" rx="4"/>
+            <text x="50" y="32" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">Rain</text>
+            <text x="50" y="41" font-size="6.5" fill="white" font-family="Arial" text-anchor="middle">stops</text>
+            <line x1="50" y1="48" x2="50" y2="51" stroke="#CC1F27" stroke-width="1.5"/>
+            <!-- Lightning bolt = immediately -->
+            <text x="77" y="53" font-size="16" fill="#F5C300" font-family="Arial" text-anchor="middle">⚡</text>
+            <!-- Event B -->
+            <circle cx="108" cy="60" r="9" fill="#1A6B3A" stroke="white" stroke-width="2"/>
+            <text x="108" y="64" font-size="9" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">B</text>
+            <rect x="82" y="72" width="52" height="28" fill="#1A6B3A" rx="4"/>
+            <text x="108" y="84" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">Kids go</text>
+            <text x="108" y="93" font-size="6.5" fill="white" font-family="Arial" text-anchor="middle">outside</text>
+            <line x1="108" y1="69" x2="108" y2="72" stroke="#1A6B3A" stroke-width="1.5"/>
+            <!-- Label -->
+            <rect x="55" y="8" width="50" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="18" font-size="7.5" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">AS SOON AS</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            immediately when something happens; at the moment that.
+          </p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>As soon as</strong> the bell rang, the students ran out of the classroom.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. BEFORE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div style="background:#B8860B;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">4</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Before</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fffbe6" rx="8"/>
+            <!-- Timeline arrow pointing left (going back in time) -->
+            <line x1="148" y1="55" x2="15" y2="55" stroke="#B8860B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5,3"/>
+            <polygon points="12,50 2,55 12,60" fill="#B8860B"/>
+            <!-- Event B (second action) on the right -->
+            <circle cx="115" cy="55" r="10" fill="#1A6B3A" stroke="white" stroke-width="2"/>
+            <text x="115" y="59" font-size="10" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">B</text>
+            <rect x="92" y="20" width="46" height="22" fill="#1A6B3A" rx="4"/>
+            <text x="115" y="30" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">She goes</text>
+            <text x="115" y="39" font-size="6.5" fill="white" font-family="Arial" text-anchor="middle">to sleep</text>
+            <line x1="115" y1="42" x2="115" y2="45" stroke="#1A6B3A" stroke-width="1.5"/>
+            <!-- Event A (first action) on the left -->
+            <circle cx="45" cy="55" r="10" fill="#CC1F27" stroke="white" stroke-width="2"/>
+            <text x="45" y="59" font-size="10" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">A</text>
+            <rect x="18" y="68" width="54" height="22" fill="#CC1F27" rx="4"/>
+            <text x="45" y="79" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">She brushes</text>
+            <text x="45" y="87" font-size="6.5" fill="white" font-family="Arial" text-anchor="middle">her teeth</text>
+            <line x1="45" y1="65" x2="45" y2="68" stroke="#CC1F27" stroke-width="1.5"/>
+            <!-- BEFORE label -->
+            <rect x="58" y="44" width="44" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="54" font-size="8" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">BEFORE</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            earlier in time than something else; earlier than the time that.
+          </p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">You should always wash your hands <strong>before</strong> you eat.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. BY THE TIME -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">5</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">By the time</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8edf8" rx="8"/>
+            <!-- Timeline -->
+            <line x1="10" y1="65" x2="150" y2="65" stroke="#1A3A8F" stroke-width="2" stroke-linecap="round"/>
+            <polygon points="150,60 160,65 150,70" fill="#1A3A8F"/>
+            <!-- Process bar (action A in progress) -->
+            <rect x="15" y="57" width="80" height="8" fill="rgba(204,31,39,0.2)" rx="3"/>
+            <rect x="15" y="57" width="80" height="8" fill="#CC1F27" rx="3" opacity="0.7"/>
+            <text x="55" y="51" font-size="6.5" fill="#CC1F27" font-family="Arial" font-weight="bold" text-anchor="middle">Dad drives home</text>
+            <!-- Deadline marker -->
+            <line x1="95" y1="50" x2="95" y2="80" stroke="#F5C300" stroke-width="2.5" stroke-dasharray="4,2"/>
+            <rect x="74" y="80" width="42" height="18" fill="#F5C300" rx="4"/>
+            <text x="95" y="90" font-size="6.5" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">Dinner ready!</text>
+            <text x="95" y="45" font-size="6.5" fill="#8B6914" font-family="Arial" font-weight="bold" text-anchor="middle">BY THIS POINT</text>
+            <!-- Check mark at deadline -->
+            <circle cx="95" cy="65" r="7" fill="#1A6B3A" stroke="white" stroke-width="1.5"/>
+            <text x="95" y="69" font-size="9" fill="white" font-family="Arial" text-anchor="middle">✓</text>
+            <!-- Label -->
+            <rect x="38" y="8" width="64" height="14" fill="#1A3A8F" rx="4"/>
+            <text x="70" y="18" font-size="7.5" fill="#F5C300" font-family="Arial" font-weight="bold" text-anchor="middle">BY THE TIME</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            when something has happened or will have happened; not later than when.
+          </p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>By the time</strong> he arrived at the party, everyone had already left.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. EVERY TIME -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div style="background:#CC1F27;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">6</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Every time</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fff5f5" rx="8"/>
+            <!-- Repeating cycle arrows -->
+            <!-- Cycle 1 -->
+            <circle cx="30" cy="55" r="18" fill="none" stroke="#CC1F27" stroke-width="2" stroke-dasharray="5,2"/>
+            <text x="30" y="52" font-size="14" text-anchor="middle">☔</text>
+            <text x="30" y="67" font-size="6" fill="#CC1F27" font-family="Arial" font-weight="bold" text-anchor="middle">Rain</text>
+            <!-- Arrow 1→2 -->
+            <text x="60" y="53" font-size="12" fill="#F5C300" font-family="Arial">→</text>
+            <text x="60" y="65" font-size="10" fill="#F5C300" font-family="Arial">↩</text>
+            <!-- Cycle 2 -->
+            <circle cx="90" cy="55" r="18" fill="none" stroke="#1A6B3A" stroke-width="2" stroke-dasharray="5,2"/>
+            <text x="90" y="52" font-size="14" text-anchor="middle">🌂</text>
+            <text x="90" y="67" font-size="6" fill="#1A6B3A" font-family="Arial" font-weight="bold" text-anchor="middle">Umbrella</text>
+            <!-- Arrow 2→3 -->
+            <text x="120" y="53" font-size="12" fill="#F5C300" font-family="Arial">→</text>
+            <text x="120" y="65" font-size="10" fill="#F5C300" font-family="Arial">↩</text>
+            <!-- Cycle 3 (same again) -->
+            <circle cx="148" cy="55" r="10" fill="rgba(204,31,39,0.15)" stroke="#CC1F27" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <text x="148" y="59" font-size="9" text-anchor="middle">☔</text>
+            <!-- EVERY TIME label -->
+            <rect x="28" y="8" width="104" height="14" fill="#CC1F27" rx="4"/>
+            <text x="80" y="18" font-size="8" fill="#F5C300" font-family="Arial" font-weight="bold" text-anchor="middle">EVERY TIME = each time</text>
+            <!-- dots suggesting repetition -->
+            <text x="80" y="100" font-size="12" fill="#CC1F27" font-family="Arial" text-anchor="middle">· · · ·</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            each time that something happens; on each occasion that.
+          </p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>Every time</strong> it rains, she takes her umbrella to school.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. SINCE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div style="background:#1A6B3A;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">7</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Since</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8f5e9" rx="8"/>
+            <!-- Timeline -->
+            <line x1="10" y1="65" x2="150" y2="65" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+            <polygon points="150,60 160,65 150,70" fill="#555"/>
+            <!-- Filled bar from past to now -->
+            <rect x="30" y="57" width="100" height="8" fill="rgba(26,107,58,0.3)" rx="3"/>
+            <rect x="30" y="57" width="100" height="8" fill="#1A6B3A" rx="3" opacity="0.6"/>
+            <!-- Start point -->
+            <circle cx="30" cy="65" r="8" fill="#CC1F27" stroke="white" stroke-width="2"/>
+            <text x="30" y="55" font-size="7" fill="#CC1F27" font-family="Arial" font-weight="bold" text-anchor="middle">Start</text>
+            <text x="30" y="79" font-size="6" fill="#888" font-family="Arial" text-anchor="middle">moved</text>
+            <text x="30" y="86" font-size="6" fill="#888" font-family="Arial" text-anchor="middle">to Spain</text>
+            <!-- Now marker -->
+            <line x1="130" y1="50" x2="130" y2="80" stroke="#F5C300" stroke-width="2.5"/>
+            <circle cx="130" cy="65" r="8" fill="#F5C300" stroke="white" stroke-width="2"/>
+            <text x="130" y="69" font-size="7" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">NOW</text>
+            <!-- Duration label -->
+            <rect x="55" y="40" width="50" height="14" fill="#1A6B3A" rx="4"/>
+            <text x="80" y="50" font-size="8" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">SINCE then</text>
+            <!-- SINCE label -->
+            <rect x="60" y="8" width="40" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="18" font-size="9" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">SINCE</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            from a time in the past until now; continuously from a past event to the present.
+          </p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She has lived in this city <strong>since</strong> she was a child.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. UNTIL -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div style="background:#B8860B;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">8</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Until</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fffbe6" rx="8"/>
+            <!-- Progress bar stopping at a wall -->
+            <line x1="10" y1="60" x2="150" y2="60" stroke="#ddd" stroke-width="2" stroke-linecap="round"/>
+            <!-- Active section -->
+            <rect x="10" y="53" width="100" height="7" fill="#B8860B" rx="3" opacity="0.7"/>
+            <!-- Wall / stop point -->
+            <rect x="110" y="38" width="8" height="44" fill="#CC1F27" rx="2"/>
+            <text x="114" y="95" font-size="6.5" fill="#CC1F27" font-family="Arial" font-weight="bold" text-anchor="middle">STOP!</text>
+            <!-- Action label -->
+            <rect x="20" y="30" width="70" height="20" fill="#B8860B" rx="4"/>
+            <text x="55" y="40" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">keep studying</text>
+            <text x="55" y="48" font-size="6.5" fill="rgba(255,255,255,0.8)" font-family="Arial" text-anchor="middle">(action continues)</text>
+            <line x1="55" y1="50" x2="55" y2="53" stroke="#B8860B" stroke-width="1.5"/>
+            <!-- End event -->
+            <rect x="118" y="35" width="38" height="22" fill="#1A6B3A" rx="4"/>
+            <text x="137" y="45" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">exam</text>
+            <text x="137" y="53" font-size="6.5" fill="white" font-family="Arial" text-anchor="middle">starts</text>
+            <!-- UNTIL label -->
+            <rect x="58" y="8" width="44" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="18" font-size="9" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">UNTIL</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            up to the point in time or the event mentioned; continuing up to a certain time.
+          </p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">They played outside <strong>until</strong> it got dark.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. WHEN -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">9</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">When</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8edf8" rx="8"/>
+            <!-- A simple "if → then" style diagram -->
+            <!-- Trigger event -->
+            <rect x="10" y="35" width="58" height="40" fill="#CC1F27" rx="6"/>
+            <text x="39" y="52" font-size="8" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">I grow</text>
+            <text x="39" y="63" font-size="8" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">up</text>
+            <!-- Arrow -->
+            <polygon points="70,55 85,48 85,62" fill="#F5C300"/>
+            <line x1="68" y1="55" x2="72" y2="55" stroke="#F5C300" stroke-width="3"/>
+            <!-- Result event -->
+            <rect x="86" y="35" width="64" height="40" fill="#1A6B3A" rx="6"/>
+            <text x="118" y="49" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">I want to</text>
+            <text x="118" y="58" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">be a doctor</text>
+            <!-- WHEN label at top -->
+            <rect x="60" y="8" width="40" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="18" font-size="9" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">WHEN</text>
+            <!-- brackets indicating these are linked -->
+            <text x="80" y="95" font-size="8" fill="#1A3A8F" font-family="Arial" text-anchor="middle">at the time that</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            at the time that; at or during the time that an event happens.
+          </p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>When</strong> I grow up, I want to be a teacher.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. WHENEVER -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div style="background:#CC1F27;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">10</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Whenever</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fff5f5" rx="8"/>
+            <!-- Multiple "any time" instances -->
+            <!-- Instance 1 -->
+            <circle cx="30" cy="40" r="14" fill="rgba(204,31,39,0.15)" stroke="#CC1F27" stroke-width="1.5" stroke-dasharray="4,2"/>
+            <text x="30" y="37" font-size="11" text-anchor="middle">😢</text>
+            <text x="30" y="50" font-size="5.5" fill="#CC1F27" font-family="Arial" text-anchor="middle">sad</text>
+            <!-- Arrow -->
+            <line x1="45" y1="40" x2="55" y2="40" stroke="#F5C300" stroke-width="2" stroke-dasharray="3,2"/>
+            <polygon points="55,36 65,40 55,44" fill="#F5C300"/>
+            <!-- Result 1 -->
+            <circle cx="78" cy="40" r="10" fill="#1A6B3A"/>
+            <text x="78" y="44" font-size="9" text-anchor="middle">🍫</text>
+            <!-- Instance 2 -->
+            <circle cx="30" cy="75" r="14" fill="rgba(204,31,39,0.15)" stroke="#CC1F27" stroke-width="1.5" stroke-dasharray="4,2"/>
+            <text x="30" y="72" font-size="11" text-anchor="middle">😢</text>
+            <text x="30" y="85" font-size="5.5" fill="#CC1F27" font-family="Arial" text-anchor="middle">sad</text>
+            <line x1="45" y1="75" x2="55" y2="75" stroke="#F5C300" stroke-width="2" stroke-dasharray="3,2"/>
+            <polygon points="55,71 65,75 55,79" fill="#F5C300"/>
+            <circle cx="78" cy="75" r="10" fill="#1A6B3A"/>
+            <text x="78" y="79" font-size="9" text-anchor="middle">🍫</text>
+            <!-- = any time label -->
+            <rect x="92" y="50" width="62" height="22" fill="#CC1F27" rx="4"/>
+            <text x="123" y="60" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">= any time /</text>
+            <text x="123" y="69" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">each time</text>
+            <!-- WHENEVER label -->
+            <rect x="44" y="8" width="72" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="18" font-size="8.5" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">WHENEVER</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            every time or at any time that something happens; no matter when.
+          </p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>Whenever</strong> she feels sad, she calls her best friend.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. WHILE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div style="background:#1A6B3A;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">11</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">While</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8f5e9" rx="8"/>
+            <!-- Two parallel timelines showing simultaneous long actions -->
+            <!-- Timeline 1 (Mom cooking) -->
+            <rect x="15" y="32" width="130" height="14" fill="#1A6B3A" rx="5" opacity="0.8"/>
+            <text x="80" y="43" font-size="7.5" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">👩‍🍳 Mom was cooking dinner</text>
+            <!-- Timeline 2 (Dad watching TV) -->
+            <rect x="15" y="56" width="130" height="14" fill="#1A3A8F" rx="5" opacity="0.8"/>
+            <text x="80" y="67" font-size="7.5" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">📺 Dad was watching TV</text>
+            <!-- Parallel brackets -->
+            <line x1="8" y1="30" x2="8" y2="72" stroke="#F5C300" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="8" y1="30" x2="14" y2="30" stroke="#F5C300" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="8" y1="72" x2="14" y2="72" stroke="#F5C300" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="152" y1="30" x2="152" y2="72" stroke="#F5C300" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="146" y1="30" x2="152" y2="30" stroke="#F5C300" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="146" y1="72" x2="152" y2="72" stroke="#F5C300" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- WHILE label -->
+            <rect x="60" y="8" width="40" height="14" fill="#F5C300" rx="4"/>
+            <text x="80" y="18" font-size="9" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">WHILE</text>
+            <!-- simultaneous label -->
+            <text x="80" y="97" font-size="7" fill="#555" font-family="Arial" text-anchor="middle">happening at the same time</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">
+            during the time that something else is happening; at the same time as a longer action or situation.
+          </p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">Mom was cooking dinner <strong>while</strong> Dad was watching TV.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- QUICK REFERENCE BOX -->
+  <div style="background:white;border-radius:12px;padding:20px 24px;margin-bottom:24px;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #F5C300;">
+    <div style="font-size:15px;font-weight:900;color:#1A1A2E;margin-bottom:14px;">⚡ Quick Reference — What goes first?</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;font-size:12.5px;">
+      <div style="background:#E8EDF8;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A3A8F;">After A,</span> <span style="color:#555;">B happens → A is first</span></div>
+      <div style="background:#FDEAEA;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#CC1F27;">Before B,</span> <span style="color:#555;">A happens → A is still first</span></div>
+      <div style="background:#E8F5E9;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A6B3A;">As soon as A,</span> <span style="color:#555;">B happens immediately</span></div>
+      <div style="background:#FFFBE6;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#B8860B;">By the time B,</span> <span style="color:#555;">A is already done</span></div>
+      <div style="background:#E8EDF8;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A3A8F;">Since A,</span> <span style="color:#555;">B continues to now</span></div>
+      <div style="background:#FFFBE6;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#B8860B;">Until B,</span> <span style="color:#555;">A keeps going</span></div>
+      <div style="background:#FDEAEA;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#CC1F27;">As / While,</span> <span style="color:#555;">two things happen at once</span></div>
+      <div style="background:#E8F5E9;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A6B3A;">When / Whenever / Every time,</span> <span style="color:#555;">one triggers another</span></div>
+    </div>
+  </div>
+
+  <!-- PRACTICE STRIP -->
+  <div style="background:#1A1A2E;border-radius:12px;padding:22px 28px;text-align:center;">
+    <div style="font-size:16px;font-weight:900;color:#F5C300;margin-bottom:8px;">🧩 Practice tip</div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation of each word. Then try to use at least <strong style="color:#F5C300;">5 of these conjunctions</strong> to write sentences about your daily routine!</p>
+    <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">🔗 dictionary.cambridge.org</a>
+  </div>
+
+</div>
+
+</section>
+
+<!-- ══ VOCABULARY #3 · COMING SOON ══ -->
+<section id="vocab-3" class="vocab-section">
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
+<div style="background:linear-gradient(135deg,#1A3A8F 0%,#0d2260 55%,#CC1F27 100%);border-radius:14px;overflow:hidden;margin-bottom:28px;position:relative;">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(-55deg,transparent,transparent 24px,rgba(255,255,255,0.025) 24px,rgba(255,255,255,0.025) 48px);"></div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;padding:28px 36px 0;position:relative;z-index:1;">
+      <div style="padding-bottom:28px;">
+      <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#F5C300;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Language Arts &#183; 8th Grade &#183; 2026</div>
+      <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">&#128218; Vocabulary <span style="color:#F5C300;">#3</span></h1>
+      <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">Personal Qualities</div>
+      <div style="font-size:12px;color:rgba(212,228,255,0.8);margin-top:5px;">10 words &#183; Cambridge Dictionary Definitions &#183; Character Traits</div>
+      <div style="margin-top:16px;"><div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">&#127775; Describing People &#183; Personality</div></div>
+    </div>
+      <svg viewBox="0 0 160 190" xmlns="http://www.w3.org/2000/svg" style="width:140px;height:168px;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.40));flex-shrink:0;margin-bottom:-4px;">
+
+  <!-- Soft glow rings around person -->
+  <circle cx="80" cy="100" r="68" fill="none" stroke="rgba(245,195,0,0.10)" stroke-width="12"/>
+  <circle cx="80" cy="100" r="52" fill="none" stroke="rgba(245,195,0,0.12)" stroke-width="8"/>
+
+  <!-- Orbiting quality badges (8 around the figure) -->
+  <!-- TOP: "Kind" badge -->
+  <circle cx="80" cy="22" r="14" fill="#F5C300" opacity="0.92"/>
+  <text x="80" y="26" font-size="8.5" font-family="Arial" font-weight="800" fill="#1A1A2E" text-anchor="middle">Kind</text>
+
+  <!-- TOP-RIGHT: star sparkle -->
+  <circle cx="128" cy="44" r="12" fill="#CC1F27" opacity="0.88"/>
+  <text x="128" y="48" font-size="7.5" font-family="Arial" font-weight="800" fill="white" text-anchor="middle">Brave</text>
+
+  <!-- RIGHT: badge -->
+  <circle cx="148" cy="96" r="13" fill="#1A6B3A" opacity="0.90"/>
+  <text x="148" y="100" font-size="7" font-family="Arial" font-weight="800" fill="white" text-anchor="middle">Honest</text>
+
+  <!-- BOTTOM-RIGHT -->
+  <circle cx="128" cy="148" r="12" fill="#1A3A8F" opacity="0.88"/>
+  <text x="128" y="152" font-size="7" font-family="Arial" font-weight="800" fill="white" text-anchor="middle">Calm</text>
+
+  <!-- BOTTOM-LEFT -->
+  <circle cx="32" cy="148" r="12" fill="#CC1F27" opacity="0.85"/>
+  <text x="32" y="152" font-size="7" font-family="Arial" font-weight="800" fill="white" text-anchor="middle">Shy</text>
+
+  <!-- LEFT -->
+  <circle cx="12" cy="96" r="13" fill="#B8860B" opacity="0.90"/>
+  <text x="12" y="100" font-size="6.5" font-family="Arial" font-weight="800" fill="white" text-anchor="middle">Eager</text>
+
+  <!-- TOP-LEFT -->
+  <circle cx="32" cy="44" r="12" fill="#1A6B3A" opacity="0.88"/>
+  <text x="32" y="48" font-size="6.5" font-family="Arial" font-weight="800" fill="white" text-anchor="middle">Shy?</text>
+
+  <!-- Connector dotted lines from badges to person -->
+  <line x1="80" y1="36" x2="80" y2="56" stroke="rgba(245,195,0,0.35)" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="118" y1="52" x2="102" y2="66" stroke="rgba(204,31,39,0.30)" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="135" y1="96" x2="108" y2="96" stroke="rgba(26,107,58,0.30)" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="118" y1="140" x2="104" y2="122" stroke="rgba(26,58,143,0.30)" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="42" y1="140" x2="58" y2="122" stroke="rgba(204,31,39,0.30)" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="25" y1="96" x2="52" y2="96" stroke="rgba(184,134,11,0.30)" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="42" y1="52" x2="60" y2="68" stroke="rgba(26,107,58,0.28)" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Person body -->
+  <!-- Head -->
+  <circle cx="80" cy="68" r="20" fill="#ffcc99" stroke="#e8b87e" stroke-width="1.5"/>
+  <!-- Hair -->
+  <ellipse cx="80" cy="51" rx="20" ry="10" fill="#2a1a0a"/>
+  <ellipse cx="80" cy="48" rx="14" ry="7" fill="#3a2510"/>
+  <!-- Eyes -->
+  <circle cx="73" cy="66" r="4" fill="white"/>
+  <circle cx="87" cy="66" r="4" fill="white"/>
+  <circle cx="74" cy="67" r="2.5" fill="#1A3A8F"/>
+  <circle cx="88" cy="67" r="2.5" fill="#1A3A8F"/>
+  <!-- Eye shine -->
+  <circle cx="75" cy="66" r="1" fill="white"/>
+  <circle cx="89" cy="66" r="1" fill="white"/>
+  <!-- Smile -->
+  <path d="M73 76 Q80 83 87 76" stroke="#c0392b" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <circle cx="68" cy="74" r="5" fill="rgba(255,150,130,0.30)"/>
+  <circle cx="92" cy="74" r="5" fill="rgba(255,150,130,0.30)"/>
+
+  <!-- Body / shirt -->
+  <path d="M55 88 Q60 85 80 88 Q100 85 105 88 L110 140 Q80 145 50 140 Z" fill="#1A3A8F"/>
+  <!-- Collar V -->
+  <polygon points="80,88 72,100 80,96 88,100" fill="white"/>
+  <!-- Gold star badge on shirt -->
+  <circle cx="80" cy="118" r="11" fill="#F5C300"/>
+  <text x="80" y="122" font-size="13" font-family="Arial" text-anchor="middle" fill="#1A1A2E">★</text>
+
+  <!-- Arms -->
+  <path d="M55 95 Q38 105 36 118" stroke="#1A3A8F" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M105 95 Q122 105 124 118" stroke="#1A3A8F" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Hands -->
+  <circle cx="36" cy="120" r="7" fill="#ffcc99"/>
+  <circle cx="124" cy="120" r="7" fill="#ffcc99"/>
+
+  <!-- Legs -->
+  <rect x="62" y="140" width="14" height="30" fill="#1A1A2E" rx="5"/>
+  <rect x="84" y="140" width="14" height="30" fill="#1A1A2E" rx="5"/>
+  <!-- Shoes -->
+  <rect x="58" y="166" width="22" height="10" fill="#333" rx="4"/>
+  <rect x="80" y="166" width="22" height="10" fill="#333" rx="4"/>
+
+  <!-- Small sparkles floating -->
+  <text x="58" y="42" font-size="10" fill="rgba(245,195,0,0.7)">✦</text>
+  <text x="100" y="36" font-size="8" fill="rgba(245,195,0,0.5)">✦</text>
+  <text x="14" y="68" font-size="9" fill="rgba(245,195,0,0.5)">✦</text>
+  <text x="138" y="72" font-size="8" fill="rgba(245,195,0,0.5)">✦</text>
+</svg>
+    </div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+  </div><div style="background:#FFFDF0;border:1.5px solid #F5C300;border-left:6px solid #F5C300;border-radius:8px;padding:16px 22px;margin-bottom:24px;font-size:13.5px;color:#333;line-height:1.8;"><strong style="color:#1A3A8F;">&#128161; How to study this vocabulary:</strong> These words describe <strong>personality traits</strong>. Study each definition and example, then try to describe yourself or someone you know using at least <strong>5 of these words</strong>!</div>  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">1</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Determined</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8edf8" rx="8"/><circle cx="100" cy="55" r="40" fill="none" stroke="#1A3A8F" stroke-width="3"/><circle cx="100" cy="55" r="28" fill="none" stroke="#CC1F27" stroke-width="2.5"/><circle cx="100" cy="55" r="16" fill="none" stroke="#1A3A8F" stroke-width="2"/><circle cx="100" cy="55" r="6" fill="#F5C300"/><rect x="28" y="50" width="32" height="10" fill="#CC1F27" rx="4"/><polygon points="60,45 75,55 60,65" fill="#CC1F27"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">having a strong will to do something and not allowing anyone or anything to stop you.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She was <strong>determined</strong> to pass all her exams, so she studied every day.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div style="background:#CC1F27;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">2</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Easy-going</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fdeaea" rx="8"/><circle cx="120" cy="30" r="18" fill="#F5C300" opacity="0.9"/><line x1="120" y1="8" x2="120" y2="2" stroke="#F5C300" stroke-width="2.5" stroke-linecap="round"/><line x1="18" y1="30" x2="18" y2="95" stroke="#8B6914" stroke-width="4" stroke-linecap="round"/><line x1="85" y1="30" x2="85" y2="95" stroke="#8B6914" stroke-width="4" stroke-linecap="round"/><path d="M18 55 Q52 80 85 55" stroke="#CC1F27" stroke-width="5" fill="rgba(204,31,39,0.15)" stroke-linecap="round"/><circle cx="52" cy="60" r="8" fill="#ffcc99"/><rect x="32" y="62" width="38" height="10" fill="#1A3A8F" rx="5"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">relaxed and not easily worried or upset; happy to accept things as they are.</p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">My teacher is very <strong>easy-going</strong> — she never gets angry about small mistakes.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div style="background:#1A6B3A;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">3</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Hardworking</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8f5e9" rx="8"/><rect x="20" y="70" width="120" height="8" fill="#8B6914" rx="3"/><rect x="28" y="78" width="8" height="28" fill="#8B6914" rx="2"/><rect x="124" y="78" width="8" height="28" fill="#8B6914" rx="2"/><rect x="30" y="46" width="32" height="24" fill="#CC1F27" rx="3"/><rect x="32" y="38" width="28" height="24" fill="#1A3A8F" rx="3"/><rect x="30" y="30" width="30" height="24" fill="#1A6B3A" rx="3"/><rect x="90" y="44" width="42" height="26" fill="white" rx="3" stroke="#ddd" stroke-width="1.5"/><line x1="95" y1="52" x2="128" y2="52" stroke="#bbb" stroke-width="1.5"/><line x1="95" y1="58" x2="122" y2="58" stroke="#bbb" stroke-width="1.5"/><line x1="95" y1="64" x2="126" y2="64" stroke="#bbb" stroke-width="1.5"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">always putting a lot of effort and energy into your work.</p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">He is such a <strong>hardworking</strong> student that he stays in the library every afternoon.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div style="background:#B8860B;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">4</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Impatient</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fffbe6" rx="8"/><circle cx="75" cy="58" r="42" fill="#fff" stroke="#B8860B" stroke-width="3"/><circle cx="75" cy="58" r="36" fill="#fffbe6"/><line x1="75" y1="58" x2="75" y2="28" stroke="#1A3A8F" stroke-width="4" stroke-linecap="round"/><line x1="75" y1="58" x2="98" y2="68" stroke="#CC1F27" stroke-width="3.5" stroke-linecap="round"/><circle cx="75" cy="58" r="4" fill="#1A1A2E"/><rect x="130" y="15" width="14" height="36" fill="#CC1F27" rx="4"/><rect x="130" y="58" width="14" height="14" fill="#CC1F27" rx="4"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">wanting something to happen soon; easily annoyed by delays or mistakes.</p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She became <strong>impatient</strong> while waiting for the bus that was one hour late.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">5</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Motivated</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8edf8" rx="8"/><line x1="80" y1="95" x2="80" y2="20" stroke="#1A3A8F" stroke-width="6" stroke-linecap="round"/><polygon points="55,45 80,15 105,45" fill="#F5C300"/><ellipse cx="115" cy="45" rx="12" ry="22" fill="#CC1F27"/><polygon points="103,48 115,14 127,48" fill="#1A3A8F"/><circle cx="115" cy="48" r="6" fill="#F5C300"/><ellipse cx="115" cy="70" rx="6" ry="10" fill="rgba(245,195,0,0.8)"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">feeling enthusiastic and eager to do something; having a reason to act.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The coach kept the team <strong>motivated</strong> by celebrating every small victory.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div style="background:#CC1F27;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">6</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Passionate</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fdeaea" rx="8"/><path d="M80 85 C80 85 25 55 25 35 C25 20 38 12 50 18 C60 23 70 32 80 42 C90 32 100 23 110 18 C122 12 135 20 135 35 C135 55 80 85 80 85 Z" fill="#CC1F27"/><ellipse cx="48" cy="28" rx="5" ry="9" fill="#F5C300" opacity="0.9"/><ellipse cx="112" cy="28" rx="5" ry="9" fill="#F5C300" opacity="0.9"/><text x="72" y="58" font-size="22" fill="white" font-family="Arial" font-weight="bold">&#9825;</text></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">having or showing very strong feelings or enthusiasm about something.</p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She is <strong>passionate</strong> about music and practises the guitar for hours every day.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div style="background:#1A6B3A;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">7</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Shy</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8f5e9" rx="8"/><rect x="15" y="40" width="130" height="60" fill="white" rx="6" stroke="#1A6B3A" stroke-width="2"/><line x1="80" y1="40" x2="80" y2="100" stroke="#8B6914" stroke-width="3"/><rect x="20" y="48" width="54" height="4" rx="2" fill="#ccc"/><rect x="20" y="56" width="50" height="4" rx="2" fill="#ccc"/><rect x="86" y="48" width="54" height="4" rx="2" fill="#ccc"/><rect x="86" y="56" width="50" height="4" rx="2" fill="#ccc"/><circle cx="80" cy="30" r="16" fill="#ffcc99"/><circle cx="74" cy="27" r="3" fill="white"/><circle cx="86" cy="27" r="3" fill="white"/><circle cx="74.5" cy="27.5" r="1.8" fill="#555"/><circle cx="86.5" cy="27.5" r="1.8" fill="#555"/><circle cx="70" cy="33" r="4" fill="rgba(255,100,100,0.35)"/><circle cx="90" cy="33" r="4" fill="rgba(255,100,100,0.35)"/><rect x="60" y="39" width="40" height="6" fill="white"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">nervous or embarrassed in the company of other people; not liking to talk or be noticed.</p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">He was so <strong>shy</strong> that he never raised his hand in class, even when he knew the answer.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div style="background:#B8860B;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">8</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Sociable</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fffbe6" rx="8"/><circle cx="35" cy="35" r="14" fill="#CC1F27"/><circle cx="35" cy="29" r="8" fill="#ffcc99"/><rect x="27" y="43" width="16" height="22" fill="#CC1F27" rx="4"/><rect x="48" y="15" width="30" height="18" fill="#F5C300" rx="6"/><polygon points="50,28 44,35 56,28" fill="#F5C300"/><text x="63" y="27" font-size="9" fill="#1A1A2E" font-family="Arial" text-anchor="middle">Hi!</text><circle cx="80" cy="35" r="14" fill="#1A3A8F"/><circle cx="80" cy="29" r="8" fill="#ffcc99"/><rect x="72" y="43" width="16" height="22" fill="#1A3A8F" rx="4"/><circle cx="125" cy="35" r="14" fill="#1A6B3A"/><circle cx="125" cy="29" r="8" fill="#ffcc99"/><rect x="117" y="43" width="16" height="22" fill="#1A6B3A" rx="4"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">enjoying being with other people; friendly and easy to talk to.</p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">Maria is very <strong>sociable</strong> and always makes new friends at school events.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">9</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Strict</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8edf8" rx="8"/><rect x="10" y="20" width="90" height="60" fill="#1A1A2E" rx="4"/><rect x="14" y="24" width="82" height="52" fill="#2a4a6a" rx="3"/><text x="28" y="38" font-size="8" fill="#F5C300" font-family="Arial" font-weight="bold">RULES:</text><text x="22" y="50" font-size="7" fill="white" font-family="Arial">1. No talking</text><text x="22" y="60" font-size="7" fill="white" font-family="Arial">2. Be on time</text><text x="22" y="70" font-size="7" fill="white" font-family="Arial">3. No phones</text><circle cx="130" cy="38" r="14" fill="#B8860B"/><circle cx="130" cy="32" r="8" fill="#ffcc99"/><rect x="122" y="46" width="16" height="22" fill="#B8860B" rx="4"/><line x1="126" y1="39" x2="134" y2="39" stroke="#888" stroke-width="2" stroke-linecap="round"/><line x1="122" y1="55" x2="98" y2="70" stroke="#8B6914" stroke-width="3" stroke-linecap="round"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">demanding that rules are obeyed; not allowing much freedom.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">Our maths teacher is very <strong>strict</strong> — she never accepts homework late.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div style="background:#CC1F27;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">10</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Talented</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fdeaea" rx="8"/><rect x="65" y="80" width="30" height="8" fill="#B8860B" rx="2"/><rect x="58" y="88" width="44" height="8" fill="#8B6914" rx="3"/><rect x="73" y="62" width="14" height="18" fill="#F5C300"/><path d="M50 20 Q50 62 80 62 Q110 62 110 20 Z" fill="#F5C300"/><path d="M50 20 Q35 20 35 40 Q35 58 52 62" stroke="#F5C300" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M110 20 Q125 20 125 40 Q125 58 108 62" stroke="#F5C300" stroke-width="4" fill="none" stroke-linecap="round"/><text x="80" y="48" font-size="22" fill="#B8860B" font-family="Arial" text-anchor="middle">&#9733;</text></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">having a natural ability to do something well.</p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">He is a <strong>talented</strong> artist who won first prize in the school drawing competition.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background:white;border-radius:12px;padding:20px 24px;margin-bottom:24px;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #F5C300;">
+    <div style="font-size:15px;font-weight:900;color:#1A1A2E;margin-bottom:14px;">&#128260; Think about it &#8212; Opposites!</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;font-size:12.5px;">
+      <div style="background:#E8EDF8;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A3A8F;">Determined</span> <span style="color:#888;">&#8596;</span> <span style="color:#555;">Weak-willed</span></div>
+      <div style="background:#FDEAEA;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#CC1F27;">Easy-going</span> <span style="color:#888;">&#8596;</span> <span style="color:#555;">Strict / Tense</span></div>
+      <div style="background:#E8F5E9;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A6B3A;">Hardworking</span> <span style="color:#888;">&#8596;</span> <span style="color:#555;">Lazy</span></div>
+      <div style="background:#FFFBE6;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#B8860B;">Impatient</span> <span style="color:#888;">&#8596;</span> <span style="color:#555;">Patient</span></div>
+      <div style="background:#FDEAEA;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#CC1F27;">Shy</span> <span style="color:#888;">&#8596;</span> <span style="color:#555;">Sociable / Confident</span></div>
+      <div style="background:#E8F5E9;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A6B3A;">Passionate</span> <span style="color:#888;">&#8596;</span> <span style="color:#555;">Indifferent</span></div>
+    </div>
+  </div>
+<div style="background:#1A1A2E;border-radius:12px;padding:22px 28px;text-align:center;">
+    <div style="font-size:16px;font-weight:900;color:#F5C300;margin-bottom:8px;">&#129329; Practice tip</div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation of each word. Then try to use at least <strong style="color:#F5C300;">5 of these words</strong> in your next writing task!</p>
+    <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">&#128279; dictionary.cambridge.org</a>
+  </div>
+</div>
+</section>
+
+<!-- ══ VOCABULARY #4 · COMING SOON ══ -->
+<section id="vocab-4" class="vocab-section">
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
+<div style="background:linear-gradient(135deg,#1A3A8F 0%,#0d2260 55%,#CC1F27 100%);border-radius:14px;overflow:hidden;margin-bottom:28px;position:relative;">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(-55deg,transparent,transparent 24px,rgba(255,255,255,0.025) 24px,rgba(255,255,255,0.025) 48px);"></div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;padding:28px 36px 0;position:relative;z-index:1;">
+      <div style="padding-bottom:28px;">
+      <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#F5C300;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Language Arts &#183; 8th Grade &#183; 2026</div>
+      <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">&#128218; Vocabulary <span style="color:#F5C300;">#4</span></h1>
+      <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">Phrasal Verbs: Making Progress</div>
+      <div style="font-size:12px;color:rgba(212,228,255,0.8);margin-top:5px;">9 phrasal verbs &#183; Cambridge Dictionary Definitions &#183; Visual Examples</div>
+      <div style="margin-top:16px;"><div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">&#9889; Phrasal Verbs &#183; Verb + Particle</div></div>
+    </div>
+      <svg viewBox="0 0 160 190" xmlns="http://www.w3.org/2000/svg" style="width:140px;height:168px;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.40));flex-shrink:0;margin-bottom:-4px;">
+
+  <!-- Background subtle grid / floor -->
+  <rect width="160" height="190" fill="rgba(255,255,255,0.03)" rx="10"/>
+
+  <!-- Stars / motivation dots in sky -->
+  <circle cx="18" cy="20" r="2.5" fill="#F5C300" opacity="0.7"/>
+  <circle cx="140" cy="15" r="2" fill="#F5C300" opacity="0.6"/>
+  <circle cx="148" cy="40" r="1.5" fill="#F5C300" opacity="0.5"/>
+  <circle cx="10" cy="55" r="2" fill="#F5C300" opacity="0.4"/>
+  <circle cx="130" cy="55" r="1.5" fill="#F5C300" opacity="0.4"/>
+
+  <!-- Upward dotted arrow path (trajectory) -->
+  <polyline points="22,168 22,140 52,140 52,108 86,108 86,75 120,75 120,42" stroke="rgba(245,195,0,0.35)" stroke-width="2.5" fill="none" stroke-dasharray="5,4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- STAIR STEPS (bottom to top, left to right) -->
+  <!-- Step 1 (lowest) -->
+  <rect x="8"  y="158" width="52" height="22" fill="#1A3A8F" rx="4"/>
+  <rect x="8"  y="155" width="52" height="8"  fill="#2a5aaf" rx="3"/>
+  <!-- Step 2 -->
+  <rect x="38" y="130" width="52" height="28" fill="#1A6B3A" rx="4"/>
+  <rect x="38" y="127" width="52" height="8"  fill="#2a8a4a" rx="3"/>
+  <!-- Step 3 -->
+  <rect x="70" y="100" width="52" height="30" fill="#CC1F27" rx="4"/>
+  <rect x="70" y="97"  width="52" height="8"  fill="#e0352b" rx="3"/>
+  <!-- Step 4 (top) -->
+  <rect x="100" y="68" width="52" height="32" fill="#B8860B" rx="4"/>
+  <rect x="100" y="65" width="52" height="8"  fill="#d4a012" rx="3"/>
+
+  <!-- Step labels (phrasal verb particles) -->
+  <text x="34" y="173" font-size="8" font-family="Arial" font-weight="800" fill="rgba(255,255,255,0.85)" text-anchor="middle">sign up</text>
+  <text x="64" y="145" font-size="8" font-family="Arial" font-weight="800" fill="rgba(255,255,255,0.85)" text-anchor="middle">set up</text>
+  <text x="96" y="115" font-size="8" font-family="Arial" font-weight="800" fill="rgba(255,255,255,0.85)" text-anchor="middle">keep up</text>
+  <text x="126" y="83" font-size="8" font-family="Arial" font-weight="800" fill="rgba(255,255,255,0.85)" text-anchor="middle">get along</text>
+
+  <!-- PERSON at the top step, arms raised in victory -->
+  <!-- legs -->
+  <line x1="118" y1="65" x2="112" y2="48" stroke="#1A3A8F" stroke-width="6" stroke-linecap="round"/>
+  <line x1="122" y1="65" x2="128" y2="48" stroke="#1A3A8F" stroke-width="6" stroke-linecap="round"/>
+  <!-- shoes -->
+  <ellipse cx="111" cy="47" rx="6" ry="4" fill="#333"/>
+  <ellipse cx="129" cy="47" rx="6" ry="4" fill="#333"/>
+  <!-- body -->
+  <rect x="112" y="30" width="16" height="18" fill="#1A3A8F" rx="5"/>
+  <!-- victory arms (raised) -->
+  <line x1="113" y1="35" x2="100" y2="20" stroke="#1A3A8F" stroke-width="6" stroke-linecap="round"/>
+  <line x1="127" y1="35" x2="140" y2="20" stroke="#1A3A8F" stroke-width="6" stroke-linecap="round"/>
+  <!-- hands -->
+  <circle cx="99"  cy="19" r="6" fill="#ffcc99"/>
+  <circle cx="141" cy="19" r="6" fill="#ffcc99"/>
+  <!-- head -->
+  <circle cx="120" cy="24" r="13" fill="#ffcc99" stroke="#e8b87e" stroke-width="1.5"/>
+  <!-- hair -->
+  <ellipse cx="120" cy="13" rx="13" ry="6" fill="#2a1a0a"/>
+  <!-- eyes (happy, closed arc) -->
+  <path d="M114 22 Q117 19 120 22" stroke="#555" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M120 22 Q123 19 126 22" stroke="#555" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- big smile -->
+  <path d="M113 27 Q120 35 127 27" stroke="#c0392b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <!-- cheeks -->
+  <circle cx="111" cy="26" r="4" fill="rgba(255,150,130,0.35)"/>
+  <circle cx="129" cy="26" r="4" fill="rgba(255,150,130,0.35)"/>
+
+  <!-- Trophy / star at top right -->
+  <circle cx="148" cy="62" r="10" fill="#F5C300" opacity="0.95"/>
+  <text x="148" y="66" font-size="12" font-family="Arial" text-anchor="middle" fill="#1A1A2E">★</text>
+
+  <!-- Upward arrows beside trajectory -->
+  <text x="12" y="112" font-size="14" fill="rgba(245,195,0,0.55)">↑</text>
+  <text x="140" y="98" font-size="14" fill="rgba(245,195,0,0.45)">↑</text>
+</svg>
+    </div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+  </div><div style="background:#FFFDF0;border:1.5px solid #F5C300;border-left:6px solid #F5C300;border-radius:8px;padding:16px 22px;margin-bottom:24px;font-size:13.5px;color:#333;line-height:1.8;"><strong style="color:#1A3A8F;">&#128161; What is a phrasal verb?</strong> A <strong>phrasal verb</strong> is a verb + a particle (preposition or adverb) that together create a <em>new meaning</em>. For example: <em>give</em> &#8800; <em>give up</em>! Study each one carefully.</div>  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">1</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Bring together</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8edf8" rx="8"/><rect x="12" y="30" width="52" height="50" fill="#1A3A8F" rx="6"/><circle cx="64" cy="55" r="10" fill="#1A3A8F"/><rect x="32" y="22" width="20" height="14" fill="#1A3A8F" rx="5"/><rect x="96" y="30" width="52" height="50" fill="#CC1F27" rx="6"/><circle cx="96" cy="55" r="10" fill="#e8edf8"/><rect x="108" y="22" width="20" height="14" fill="#CC1F27" rx="5"/><line x1="72" y1="55" x2="88" y2="55" stroke="#F5C300" stroke-width="3" stroke-dasharray="4,3" stroke-linecap="round"/><polygon points="86,50 96,55 86,60" fill="#F5C300"/><polygon points="74,50 64,55 74,60" fill="#F5C300"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to cause people to meet or be united, especially to work on something or achieve a goal.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The project helped to <strong>bring together</strong> students from different schools.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div style="background:#CC1F27;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">2</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Count on</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fdeaea" rx="8"/><circle cx="50" cy="35" r="14" fill="#CC1F27"/><circle cx="50" cy="29" r="8" fill="#ffcc99"/><rect x="42" y="43" width="16" height="22" fill="#CC1F27" rx="4"/><circle cx="110" cy="32" r="16" fill="#1A3A8F"/><circle cx="110" cy="25" r="9" fill="#ffcc99"/><rect x="101" y="42" width="18" height="25" fill="#1A3A8F" rx="4"/><line x1="66" y1="45" x2="96" y2="42" stroke="#F5C300" stroke-width="2.5" stroke-dasharray="4,3"/><polygon points="93,37 102,42 93,47" fill="#F5C300"/><text x="50" y="82" font-size="7" fill="#CC1F27" font-family="Arial" text-anchor="middle">rely on</text><text x="110" y="82" font-size="7" fill="#1A3A8F" font-family="Arial" text-anchor="middle">trust</text></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to depend on someone or expect something to happen; to trust or rely on.</p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">You can always <strong>count on</strong> her — she never lets her friends down.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div style="background:#1A6B3A;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">3</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Get along</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8f5e9" rx="8"/><ellipse cx="80" cy="57" rx="18" ry="14" fill="#ffcc99" stroke="#e8b87e" stroke-width="1.5"/><path d="M80 30 C80 30 65 20 65 28 C65 35 80 42 80 42 C80 42 95 35 95 28 C95 20 80 30 80 30Z" fill="#CC1F27" opacity="0.8"/><rect x="25" y="52" width="34" height="12" fill="#ffcc99" rx="6"/><rect x="101" y="52" width="34" height="12" fill="#ffcc99" rx="6"/><text x="80" y="92" font-size="8" fill="#1A6B3A" font-family="Arial" font-weight="bold" text-anchor="middle">good relationship!</text></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to have a friendly relationship with someone; to be on good terms.</p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The two brothers didn't <strong>get along</strong> at first, but now they are best friends.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div style="background:#B8860B;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">4</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Give up</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fffbe6" rx="8"/><rect x="58" y="15" width="6" height="90" fill="#8B6914" rx="2"/><polygon points="64,15 130,30 64,55" fill="white" stroke="#ccc" stroke-width="1.5"/><line x1="80" y1="25" x2="110" y2="48" stroke="#CC1F27" stroke-width="3" stroke-linecap="round"/><line x1="110" y1="25" x2="80" y2="48" stroke="#CC1F27" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="50" r="16" fill="#B8860B"/><circle cx="30" cy="44" r="9" fill="#ffcc99"/><rect x="22" y="58" width="16" height="20" fill="#B8860B" rx="4"/><text x="30" y="90" font-size="7" fill="#B8860B" font-family="Arial" text-anchor="middle">stop trying</text></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to stop doing or trying to do something; to stop trying to achieve something.</p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">Don't <strong>give up</strong> — keep practising and you will improve!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">5</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Keep up</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8edf8" rx="8"/><rect x="10" y="78" width="140" height="6" fill="#ddd" rx="3"/><circle cx="110" cy="45" r="10" fill="#CC1F27"/><circle cx="110" cy="39" r="6" fill="#ffcc99"/><line x1="110" y1="53" x2="98" y2="72" stroke="#CC1F27" stroke-width="3" stroke-linecap="round"/><line x1="110" y1="53" x2="122" y2="72" stroke="#CC1F27" stroke-width="3" stroke-linecap="round"/><circle cx="55" cy="48" r="10" fill="#1A3A8F"/><circle cx="55" cy="42" r="6" fill="#ffcc99"/><line x1="55" y1="56" x2="43" y2="75" stroke="#1A3A8F" stroke-width="3" stroke-linecap="round"/><line x1="55" y1="56" x2="67" y2="75" stroke="#1A3A8F" stroke-width="3" stroke-linecap="round"/><line x1="68" y1="54" x2="96" y2="50" stroke="#F5C300" stroke-width="2" stroke-dasharray="4,3"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to continue at the same pace or level; to not fall behind others.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She ran as fast as she could to <strong>keep up</strong> with the rest of the team.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div style="background:#CC1F27;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">6</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Pass on</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fdeaea" rx="8"/><circle cx="22" cy="38" r="10" fill="#1A3A8F"/><circle cx="22" cy="32" r="6" fill="#ffcc99"/><rect x="16" y="46" width="12" height="16" fill="#1A3A8F" rx="3"/><rect x="30" y="50" width="20" height="14" fill="#F5C300" rx="3"/><line x1="52" y1="57" x2="64" y2="57" stroke="#555" stroke-width="2" stroke-dasharray="3,2"/><polygon points="62,53 70,57 62,61" fill="#555"/><circle cx="80" cy="38" r="10" fill="#CC1F27"/><circle cx="80" cy="32" r="6" fill="#ffcc99"/><rect x="74" y="46" width="12" height="16" fill="#CC1F27" rx="3"/><rect x="88" y="50" width="20" height="14" fill="#F5C300" rx="3"/><line x1="110" y1="57" x2="122" y2="57" stroke="#555" stroke-width="2" stroke-dasharray="3,2"/><polygon points="120,53 128,57 120,61" fill="#555"/><circle cx="138" cy="38" r="10" fill="#1A6B3A"/><circle cx="138" cy="32" r="6" fill="#ffcc99"/><rect x="132" y="46" width="12" height="16" fill="#1A6B3A" rx="3"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to give or tell something to another person; to transmit information, knowledge, or objects.</p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">Could you <strong>pass on</strong> this message to the teacher, please?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div style="background:#1A6B3A;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">7</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Set up</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8f5e9" rx="8"/><rect x="10" y="90" width="140" height="4" fill="#8B6914" rx="2"/><rect x="40" y="45" width="80" height="45" fill="#1A3A8F" rx="4"/><rect x="50" y="55" width="20" height="14" fill="#F5C300" rx="2"/><rect x="90" y="55" width="20" height="14" fill="#F5C300" rx="2"/><rect x="70" y="72" width="20" height="18" fill="#F5C300" rx="2"/><polygon points="35,45 80,15 125,45" fill="#CC1F27" stroke="white" stroke-width="2"/><rect x="120" y="10" width="5" height="60" fill="#8B6914" rx="2"/><rect x="95" y="10" width="30" height="5" fill="#8B6914" rx="2"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to start or create something new, such as a business, organisation, or system.</p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">They decided to <strong>set up</strong> a study group to prepare for the exams.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div style="background:#B8860B;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">8</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Sign up</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#fffbe6" rx="8"/><rect x="35" y="18" width="90" height="78" fill="white" rx="6" stroke="#B8860B" stroke-width="2"/><rect x="55" y="12" width="50" height="14" fill="#B8860B" rx="5"/><rect x="44" y="30" width="72" height="8" fill="#1A3A8F" rx="3"/><text x="80" y="37" font-size="7" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">SIGN UP FORM</text><text x="44" y="52" font-size="6.5" fill="#888" font-family="Arial">Name:</text><rect x="44" y="54" width="72" height="3" fill="#ccc" rx="1.5"/><text x="44" y="66" font-size="6.5" fill="#888" font-family="Arial">Email:</text><rect x="44" y="68" width="72" height="3" fill="#ccc" rx="1.5"/><path d="M50 84 Q60 76 70 82 Q80 90 90 78" stroke="#1A6B3A" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to officially join or register for something, such as a course, team, or service.</p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">I want to <strong>sign up</strong> for the after-school drama club this term.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div style="background:#1A3A8F;padding:10px 16px;display:flex;align-items:center;gap:10px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">9</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Turn into</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);"><svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="110" fill="#e8edf8" rx="8"/><circle cx="22" cy="65" r="10" fill="#2a8a4a"/><circle cx="37" cy="62" r="9" fill="#1A6B3A"/><circle cx="51" cy="62" r="9" fill="#1A6B3A"/><circle cx="65" cy="64" r="9" fill="#1A6B3A"/><line x1="80" y1="65" x2="100" y2="65" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/><polygon points="97,59 110,65 97,71" fill="#F5C300"/><path d="M125 55 C105 30 130 20 135 45 Z" fill="#CC1F27"/><path d="M135 55 C155 30 148 20 125 55 Z" fill="#F5C300"/><path d="M125 60 C105 80 118 95 130 72 Z" fill="#F5C300"/><path d="M135 60 C155 80 148 95 130 72 Z" fill="#CC1F27"/><rect x="129" y="48" width="6" height="26" fill="#1A1A2E" rx="3"/></svg></div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">to change and become something different; to transform from one thing to another.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example &#183; </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The caterpillar will eventually <strong>turn into</strong> a beautiful butterfly.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background:white;border-radius:12px;padding:20px 24px;margin-bottom:24px;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #F5C300;">
+    <div style="font-size:15px;font-weight:900;color:#1A1A2E;margin-bottom:14px;">&#9889; Quick Tip &#8212; Watch the Particle!</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;font-size:12.5px;">
+      <div style="background:#E8EDF8;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A3A8F;">bring</span> + together &#8594; <span style="color:#1A3A8F;">unite</span></div>
+      <div style="background:#FDEAEA;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#CC1F27;">count</span> + on &#8594; <span style="color:#CC1F27;">rely/trust</span></div>
+      <div style="background:#E8F5E9;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A6B3A;">get</span> + along &#8594; <span style="color:#1A6B3A;">have a good relationship</span></div>
+      <div style="background:#FFFBE6;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#B8860B;">give</span> + up &#8594; <span style="color:#B8860B;">stop / quit</span></div>
+      <div style="background:#E8EDF8;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A3A8F;">keep</span> + up &#8594; <span style="color:#1A3A8F;">maintain pace</span></div>
+      <div style="background:#FDEAEA;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#CC1F27;">pass</span> + on &#8594; <span style="color:#CC1F27;">transmit / hand over</span></div>
+      <div style="background:#E8F5E9;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A6B3A;">set</span> + up &#8594; <span style="color:#1A6B3A;">create / start</span></div>
+      <div style="background:#FFFBE6;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#B8860B;">sign</span> + up &#8594; <span style="color:#B8860B;">register / join</span></div>
+      <div style="background:#E8EDF8;border-radius:8px;padding:10px 14px;"><span style="font-weight:800;color:#1A3A8F;">turn</span> + into &#8594; <span style="color:#1A3A8F;">transform / become</span></div>
+    </div>
+  </div>
+<div style="background:#1A1A2E;border-radius:12px;padding:22px 28px;text-align:center;">
+    <div style="font-size:16px;font-weight:900;color:#F5C300;margin-bottom:8px;">&#129329; Practice tip</div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation of each word. Then try to use at least <strong style="color:#F5C300;">5 of these words</strong> in your next writing task!</p>
+    <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">&#128279; dictionary.cambridge.org</a>
+  </div>
+</div>
+</section>
+
+<script>
+  function showVocab(num, btn) {
+    // Hide all sections
+    document.querySelectorAll('.vocab-section').forEach(function(s){ s.classList.remove('visible'); });
+    // Show selected
+    document.getElementById('vocab-' + num).classList.add('visible');
+    // Update button states
+    document.querySelectorAll('.nav-btn:not(.coming-soon)').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    // Scroll to top of content
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
 
 </div>
