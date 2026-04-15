@@ -1,5 +1,170 @@
-<!-- ══ VOCABULARY #5 ══ -->
-<section id="vocab-5" class="vocab-section">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary – Language Arts 8th Grade 2026</title>
+<style>
+  /* ── Shared responsive card style ── */
+  @media (max-width: 600px) {
+    .vocab-card-body {
+      flex-direction: column !important;
+    }
+    .vocab-card-body img,
+    .vocab-card-body > div:first-child {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  /* ── Navigation bar ── */
+  body {
+    margin: 0;
+    padding: 0;
+    background: #F4F6FA;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  #vocab-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #1A1A2E;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 10px 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+    border-bottom: 3px solid #F5C300;
+    align-items: center;
+  }
+
+  #vocab-nav .nav-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 8px;
+    white-space: nowrap;
+  }
+
+  .nav-btn {
+    background: rgba(255,255,255,0.07);
+    border: 1.5px solid rgba(255,255,255,0.15);
+    border-radius: 24px;
+    color: rgba(255,255,255,0.75);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .nav-btn:hover {
+    background: rgba(245,195,0,0.18);
+    border-color: rgba(245,195,0,0.5);
+    color: #F5C300;
+  }
+
+  .nav-btn.active {
+    background: #F5C300;
+    border-color: #F5C300;
+    color: #1A1A2E;
+  }
+
+  .nav-btn.coming-soon {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  /* ── Vocab sections ── */
+  .vocab-section {
+    display: none;
+    padding: 28px 16px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .vocab-section.visible {
+    display: block;
+  }
+
+  /* ── Coming Soon placeholder ── */
+  .coming-soon-placeholder {
+    text-align: center;
+    padding: 80px 20px;
+    color: #1A3A8F;
+  }
+  .coming-soon-placeholder .big-emoji { font-size: 72px; margin-bottom: 20px; }
+  .coming-soon-placeholder h2 { font-size: 28px; font-weight: 900; margin: 0 0 12px; }
+  .coming-soon-placeholder p  { font-size: 15px; color: #555; max-width: 420px; margin: 0 auto; line-height: 1.7; }
+
+  /* ── Accordion cards ── */
+  .vocab-card-header {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    transition: filter 0.15s;
+    position: relative;
+  }
+  .vocab-card-header:hover { filter: brightness(1.12); }
+
+  .vocab-card-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1),
+                opacity    0.30s ease,
+                padding    0.30s ease;
+    opacity: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .vocab-card-body.open {
+    max-height: 700px;
+    opacity: 1;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  /* Chevron arrow on the right of header */
+  .vocab-chevron {
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.32s cubic-bezier(0.4,0,0.2,1);
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+  }
+  .vocab-card-header.open .vocab-chevron { transform: rotate(180deg); }
+
+</style>
+</head>
+<body>
+
+<!-- ══ NAVIGATION BAR ══ -->
+<div id="vocab-nav">
+  <span class="nav-label">📖 Vocabulary</span>
+  <button class="nav-btn active"   onclick="showVocab(1,this)">#1 · Media &amp; Communication</button>
+  <button class="nav-btn"          onclick="showVocab(2,this)">#2 · Time Conjunctions</button>
+  <button class="nav-btn" onclick="showVocab(3,this)">#3 · Personal Qualities</button>
+  <button class="nav-btn" onclick="showVocab(4,this)">#4 · Phrasal Verbs</button>
+  <button class="nav-btn" onclick="showVocab(5,this)">#5 · Personality Adjectives</button>
+</div>
+
+<!-- ══ VOCABULARY #1 ══ -->
+<section id="vocab-1" class="vocab-section visible">
 <div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
 
   <!-- HERO -->
@@ -9,367 +174,1486 @@
     <div style="display:flex;align-items:flex-end;justify-content:space-between;padding:28px 36px 0;position:relative;z-index:1;">
       <div style="padding-bottom:28px;">
         <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#F5C300;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Language Arts · 8th Grade · 2026</div>
-        <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">📖 Vocabulary <span style="color:#F5C300;">#5</span></h1>
-        <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">Personality Adjectives</div>
+        <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">📖 Vocabulary <span style="color:#F5C300;">#1</span></h1>
+        <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">The Language of Media &amp; Communication</div>
         <div style="font-size:12px;color:rgba(212,228,255,0.8);margin-top:5px;">12 words · Cambridge Dictionary Definitions · Visual Examples</div>
         <div style="margin-top:16px;">
-          <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">🗣️ Speaking Unit · 2026</div>
+          <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">🎤 Speaking Unit · Feb 10 – Mar 5</div>
         </div>
       </div>
     </div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
   </div>
 
-  <!-- INTRO BOX -->
-  <div style="background:linear-gradient(135deg,#e8f0fe,#f0f4ff);border-left:5px solid #1A3A8F;border-radius:10px;padding:18px 22px;margin-bottom:28px;">
-    <div style="font-size:14px;color:#1A3A8F;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">📌 About This Set</div>
-    <p style="margin:0;font-size:14px;color:#2d3a5e;line-height:1.7;">These <strong>12 personality adjectives</strong> describe character traits and social qualities. Use them to talk about yourself and others in speaking and writing tasks.</p>
+  <!-- INTRO TIP -->
+  <div style="background:#FFFDF0;border:1.5px solid #F5C300;border-left:6px solid #F5C300;border-radius:8px;padding:16px 22px;margin-bottom:24px;font-size:13.5px;color:#333;line-height:1.8;">
+    <strong style="color:#1A3A8F;">💡 How to study this vocabulary:</strong> Look at the illustration, read the definition and study the example sentence. Then try to write your own sentence for each word. You'll be tested on these in the <strong>weekly dictation</strong>!
   </div>
 
-  <!-- WORD 1: AFFECTIONATE -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">1</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">AFFECTIONATE</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/əˈfek.ʃən.ət/ · adjective</div>
+  <!-- VOCAB CARDS -->
+  <div style="text-align:right;margin-bottom:8px;">
+    <button onclick="toggleAllCards(this)" style="background:none;border:1.5px solid #1A3A8F;border-radius:20px;color:#1A3A8F;font-size:11px;font-weight:800;padding:5px 14px;cursor:pointer;transition:all 0.2s;" data-state="closed">
+      ▼ Abrir todas
+    </button>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+    
+    <!-- ARTICLE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">1</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Article</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
       </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Showing feelings of liking or love for someone in a gentle and kind way.</p>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#f0f4ff" rx="8"/>
+            <rect x="10" y="10" width="140" height="90" fill="white" rx="6" stroke="#1A3A8F" stroke-width="1.5"/>
+            <rect x="20" y="20" width="90" height="8" rx="3" fill="#1A3A8F"/>
+            <rect x="20" y="34" width="120" height="4" rx="2" fill="#ccc"/>
+            <rect x="20" y="42" width="110" height="4" rx="2" fill="#ccc"/>
+            <rect x="20" y="50" width="120" height="4" rx="2" fill="#ccc"/>
+            <rect x="20" y="58" width="100" height="4" rx="2" fill="#ccc"/>
+            <rect x="20" y="72" width="50" height="22" rx="4" fill="#e8edf8"/>
+            <rect x="78" y="72" width="62" height="4" rx="2" fill="#ccc"/>
+            <rect x="78" y="80" width="55" height="4" rx="2" fill="#ccc"/>
+            <rect x="78" y="88" width="48" height="4" rx="2" fill="#ccc"/>
+            <text x="115" y="26" font-size="9" fill="#1A3A8F" font-family="Arial" font-weight="bold">ARTICLE</text>
+          </svg>
         </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"She is very <strong>affectionate</strong> with her younger siblings — always hugging them."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">💛 warm</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🤗 loving</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ cold</span>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a piece of writing on a particular subject in a newspaper, magazine, or on a website.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">I read an interesting article about climate change in the newspaper.</span>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- BLOGGER -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">2</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Blogger</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fff5f5" rx="8"/>
+            <rect x="25" y="55" width="110" height="70" fill="#555" rx="4"/>
+            <rect x="30" y="30" width="100" height="68" fill="#222" rx="4"/>
+            <rect x="32" y="32" width="96" height="64" fill="#1a1a2e" rx="3"/>
+            <rect x="38" y="38" width="60" height="6" rx="2" fill="#F5C300"/>
+            <rect x="38" y="48" width="84" height="3" rx="1.5" fill="#555"/>
+            <rect x="38" y="54" width="75" height="3" rx="1.5" fill="#555"/>
+            <rect x="38" y="60" width="80" height="3" rx="1.5" fill="#555"/>
+            <rect x="38" y="68" width="40" height="14" rx="3" fill="#CC1F27"/>
+            <text x="42" y="78" font-size="8" fill="white" font-family="Arial" font-weight="bold">POST</text>
+            <rect x="82" y="68" width="2" height="10" fill="#F5C300" opacity="0.9"/>
+            <rect x="35" y="100" width="90" height="18" fill="#444" rx="3"/>
+            <rect x="55" y="104" width="50" height="6" rx="2" fill="#666"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a person who writes a blog (= a record of your thoughts that you put on the internet for other people to read).</p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She became a famous blogger after writing about her travels around the world.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADLINE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">3</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Headline</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fffbe6" rx="8"/>
+            <rect x="8" y="8" width="144" height="94" fill="white" rx="5" stroke="#B8860B" stroke-width="1.5"/>
+            <rect x="8" y="8" width="144" height="18" fill="#1A1A2E" rx="5"/>
+            <text x="80" y="21" font-size="9" fill="#F5C300" font-family="Arial" font-weight="bold" text-anchor="middle">THE DAILY NEWS</text>
+            <rect x="14" y="32" width="132" height="14" rx="3" fill="#1A3A8F"/>
+            <text x="80" y="42" font-size="9" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">BREAKING: BIG HEADLINE!</text>
+            <line x1="14" y1="52" x2="146" y2="52" stroke="#ddd" stroke-width="1"/>
+            <rect x="14" y="56" width="60" height="4" rx="2" fill="#bbb"/>
+            <rect x="14" y="63" width="55" height="4" rx="2" fill="#bbb"/>
+            <rect x="14" y="70" width="60" height="4" rx="2" fill="#bbb"/>
+            <rect x="86" y="56" width="60" height="4" rx="2" fill="#bbb"/>
+            <rect x="86" y="63" width="55" height="4" rx="2" fill="#bbb"/>
+            <rect x="86" y="70" width="60" height="4" rx="2" fill="#bbb"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a title printed in large letters above a story in a newspaper, or the main points of the news that are broadcast on television or radio.</p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The president's resignation was the headline on every newspaper.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERVIEW -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">4</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Interview</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8f5e9" rx="8"/>
+            <circle cx="42" cy="32" r="14" fill="#1A3A8F"/>
+            <circle cx="42" cy="26" r="8" fill="#ffcc99"/>
+            <rect x="34" y="34" width="16" height="20" fill="#1A3A8F" rx="3"/>
+            <rect x="52" y="38" width="6" height="14" fill="#555" rx="3"/>
+            <rect x="50" y="52" width="10" height="2" fill="#555"/>
+            <rect x="54" y="54" width="2" height="6" fill="#555"/>
+            <circle cx="118" cy="32" r="14" fill="#CC1F27"/>
+            <circle cx="118" cy="26" r="8" fill="#ffcc99"/>
+            <rect x="110" y="34" width="16" height="20" fill="#CC1F27" rx="3"/>
+            <rect x="58" y="14" width="44" height="18" fill="#F5C300" rx="8"/>
+            <polygon points="68,32 62,38 74,32" fill="#F5C300"/>
+            <text x="80" y="27" font-size="9" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">So, tell</text>
+            <text x="80" y="37" font-size="7" fill="#1A1A2E" font-family="Arial" text-anchor="middle">me about...</text>
+            <rect x="10" y="68" width="140" height="8" fill="#B8860B" rx="3"/>
+            <rect x="20" y="76" width="6" height="28" fill="#B8860B" rx="2"/>
+            <rect x="134" y="76" width="6" height="28" fill="#B8860B" rx="2"/>
+            <rect x="60" y="60" width="40" height="8" fill="white" rx="2" stroke="#ccc" stroke-width="1"/>
+            <rect x="64" y="62" width="20" height="2" rx="1" fill="#bbb"/>
+            <rect x="64" y="66" width="16" height="2" rx="1" fill="#bbb"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a meeting in which someone asks another person questions, especially for a newspaper or television programme, or for a job.</p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The reporter conducted an interview with the award-winning author.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">5</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">News / The News</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8edf8" rx="8"/>
+            <rect x="15" y="8" width="130" height="78" fill="#222" rx="10"/>
+            <rect x="20" y="13" width="120" height="68" fill="#1a1a2e" rx="6"/>
+            <rect x="20" y="13" width="120" height="16" fill="#CC1F27"/>
+            <text x="80" y="25" font-size="9" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">BREAKING NEWS</text>
+            <rect x="28" y="36" width="104" height="36" fill="#1A3A8F" rx="4"/>
+            <circle cx="80" cy="42" r="9" fill="#ffcc99"/>
+            <rect x="72" y="50" width="16" height="12" fill="#555" rx="2"/>
+            <rect x="20" y="72" width="120" height="10" fill="#F5C300"/>
+            <text x="80" y="80" font-size="6" fill="#1A1A2E" font-family="Arial" font-weight="bold" text-anchor="middle">WEATHER - SPORTS - WORLD NEWS</text>
+            <rect x="62" y="86" width="36" height="8" fill="#333" rx="2"/>
+            <rect x="38" y="94" width="84" height="8" fill="#444" rx="4"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">information or reports about recent events, broadcast on television or radio, or published in newspapers.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She watches the news every evening to stay informed about world events.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAPER -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">6</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Paper</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fff9e6" rx="8"/>
+            <rect x="10" y="10" width="140" height="90" fill="white" rx="4" stroke="#ddd" stroke-width="1.5"/>
+            <line x1="80" y1="10" x2="80" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="4,3"/>
+            <rect x="10" y="10" width="140" height="16" fill="#1A1A2E" rx="4 4 0 0"/>
+            <text x="80" y="21" font-size="9" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">★ THE MORNING PAPER ★</text>
+            <rect x="16" y="32" width="56" height="10" rx="2" fill="#1A3A8F"/>
+            <rect x="16" y="46" width="58" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="16" y="52" width="54" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="16" y="58" width="56" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="16" y="74" width="58" height="20" rx="3" fill="#e8edf8"/>
+            <rect x="86" y="32" width="56" height="10" rx="2" fill="#CC1F27"/>
+            <rect x="86" y="46" width="58" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="86" y="52" width="54" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="86" y="74" width="58" height="20" rx="3" fill="#fdeaea"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a newspaper.</p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">He picks up a paper every morning on his way to work.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REPORT -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">7</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Report</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8f5e9" rx="8"/>
+            <rect x="30" y="8" width="100" height="94" fill="white" rx="5" stroke="#1A6B3A" stroke-width="1.5"/>
+            <rect x="30" y="8" width="100" height="18" fill="#1A6B3A" rx="5 5 0 0"/>
+            <text x="80" y="20" font-size="8" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">OFFICIAL REPORT</text>
+            <rect x="40" y="32" width="14" height="30" fill="#1A3A8F" rx="2"/>
+            <rect x="58" y="44" width="14" height="18" fill="#CC1F27" rx="2"/>
+            <rect x="76" y="36" width="14" height="26" fill="#1A6B3A" rx="2"/>
+            <rect x="94" y="28" width="14" height="34" fill="#B8860B" rx="2"/>
+            <line x1="38" y1="62" x2="112" y2="62" stroke="#ccc" stroke-width="1"/>
+            <rect x="40" y="70" width="80" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="40" y="76" width="70" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="40" y="82" width="75" height="3" rx="1.5" fill="#bbb"/>
+            <circle cx="108" cy="86" r="12" fill="none" stroke="#CC1F27" stroke-width="2"/>
+            <text x="108" y="90" font-size="6" fill="#CC1F27" font-family="Arial" font-weight="bold" text-anchor="middle">FINAL</text>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a written or spoken description of a situation, event, or problem, usually made after careful consideration of the facts.</p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The journalist wrote a detailed report about the flooding in the city.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REPORTER -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">8</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Reporter</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fdeaea" rx="8"/>
+            <circle cx="60" cy="30" r="16" fill="#CC1F27"/>
+            <circle cx="60" cy="24" r="10" fill="#ffcc99"/>
+            <rect x="50" y="14" width="20" height="5" fill="#1A1A2E" rx="2"/>
+            <rect x="52" y="10" width="16" height="6" fill="#1A1A2E" rx="2"/>
+            <rect x="60" y="15" width="8" height="6" fill="#F5C300" rx="1"/>
+            <text x="64" y="20" font-size="5" fill="#1A1A2E" font-family="Arial" font-weight="bold">PRESS</text>
+            <rect x="50" y="44" width="20" height="26" fill="#1A3A8F" rx="3"/>
+            <line x1="70" y1="50" x2="95" y2="44" stroke="#555" stroke-width="2"/>
+            <rect x="92" y="36" width="10" height="16" fill="#333" rx="5"/>
+            <rect x="94" y="52" width="6" height="8" fill="#555"/>
+            <rect x="90" y="60" width="14" height="2" fill="#555"/>
+            <rect x="30" y="52" width="20" height="26" fill="white" rx="2" stroke="#ccc" stroke-width="1"/>
+            <rect x="33" y="56" width="14" height="2" rx="1" fill="#bbb"/>
+            <rect x="33" y="61" width="12" height="2" rx="1" fill="#bbb"/>
+            <rect x="33" y="66" width="14" height="2" rx="1" fill="#bbb"/>
+            <rect x="110" y="40" width="36" height="28" fill="#333" rx="4"/>
+            <circle cx="120" cy="54" r="8" fill="#222" stroke="#555" stroke-width="1"/>
+            <circle cx="120" cy="54" r="5" fill="#1a1a2e"/>
+            <circle cx="138" cy="44" r="3" fill="#CC1F27"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">someone whose job is to discover information about news events and describe them for a newspaper, magazine, television, or radio.</p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The reporter rushed to the scene of the accident to cover the story.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">9</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Review</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#fffbe6" rx="8"/>
+            <rect x="45" y="8" width="70" height="94" fill="#1a1a2e" rx="10"/>
+            <rect x="48" y="16" width="64" height="78" fill="white" rx="5"/>
+            <rect x="50" y="18" width="60" height="35" fill="#1A3A8F" rx="4"/>
+            <text x="80" y="32" font-size="9" fill="#F5C300" font-family="Arial" font-weight="bold" text-anchor="middle">🎬 MOVIE</text>
+            <text x="80" y="44" font-size="7" fill="white" font-family="Arial" text-anchor="middle">Now Playing</text>
+            <text x="56" y="68" font-size="14" fill="#F5C300" font-family="Arial">★★★★</text>
+            <text x="132" y="68" font-size="14" fill="#ddd" font-family="Arial">★</text>
+            <rect x="52" y="72" width="56" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="52" y="78" width="50" height="3" rx="1.5" fill="#bbb"/>
+            <rect x="52" y="84" width="54" height="3" rx="1.5" fill="#bbb"/>
+            <circle cx="80" cy="106" r="4" fill="#333" stroke="#555" stroke-width="1"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a report in a newspaper, magazine, or programme that gives an opinion about a new book, film, television programme, etc.</p>
+          <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The film received excellent reviews from critics around the world.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISINTEREST -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">10</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Disinterest</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#f5f5f5" rx="8"/>
+            <rect x="20" y="60" width="120" height="40" fill="#B8860B" rx="4"/>
+            <rect x="22" y="62" width="56" height="36" fill="#fffbe6" rx="3"/>
+            <rect x="82" y="62" width="56" height="36" fill="#fffbe6" rx="3"/>
+            <rect x="78" y="60" width="4" height="40" fill="#8B6914"/>
+            <rect x="26" y="68" width="44" height="2" rx="1" fill="#ccc"/>
+            <rect x="26" y="74" width="40" height="2" rx="1" fill="#ccc"/>
+            <rect x="86" y="68" width="44" height="2" rx="1" fill="#ccc"/>
+            <rect x="86" y="74" width="40" height="2" rx="1" fill="#ccc"/>
+            <circle cx="80" cy="35" r="18" fill="#ffcc99"/>
+            <ellipse cx="73" cy="33" rx="4" ry="4" fill="white"/>
+            <ellipse cx="87" cy="33" rx="4" ry="4" fill="white"/>
+            <circle cx="76" cy="33" r="2.5" fill="#555"/>
+            <circle cx="90" cy="33" r="2.5" fill="#555"/>
+            <line x1="74" y1="43" x2="86" y2="43" stroke="#aaa" stroke-width="2" stroke-linecap="round"/>
+            <text x="96" y="25" font-size="10" fill="#aaa" font-family="Arial" font-weight="bold">z</text>
+            <text x="104" y="18" font-size="12" fill="#ccc" font-family="Arial" font-weight="bold">z</text>
+            <text x="114" y="10" font-size="14" fill="#ddd" font-family="Arial" font-weight="bold">Z</text>
+            <ellipse cx="62" cy="42" rx="7" ry="5" fill="#ffcc99"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">lack of interest in something or someone.</p>
+          <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">His disinterest in the topic was obvious from the way he looked out the window.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">11</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Timeline</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8edf8" rx="8"/>
+            <line x1="15" y1="55" x2="145" y2="55" stroke="#1A3A8F" stroke-width="3" stroke-linecap="round"/>
+            <polygon points="145,50 155,55 145,60" fill="#1A3A8F"/>
+            <circle cx="30" cy="55" r="7" fill="#CC1F27" stroke="white" stroke-width="2"/>
+            <circle cx="65" cy="55" r="7" fill="#1A6B3A" stroke="white" stroke-width="2"/>
+            <circle cx="100" cy="55" r="7" fill="#B8860B" stroke="white" stroke-width="2"/>
+            <circle cx="135" cy="55" r="7" fill="#1A3A8F" stroke="white" stroke-width="2"/>
+            <rect x="16" y="20" width="28" height="22" fill="#CC1F27" rx="4"/>
+            <text x="30" y="30" font-size="6" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">1920s</text>
+            <text x="30" y="38" font-size="5.5" fill="white" font-family="Arial" text-anchor="middle">Jazz Age</text>
+            <line x1="30" y1="42" x2="30" y2="48" stroke="#CC1F27" stroke-width="1.5"/>
+            <rect x="51" y="68" width="28" height="22" fill="#1A6B3A" rx="4"/>
+            <text x="65" y="78" font-size="6" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">1960s</text>
+            <text x="65" y="86" font-size="5.5" fill="white" font-family="Arial" text-anchor="middle">Moon</text>
+            <line x1="65" y1="62" x2="65" y2="68" stroke="#1A6B3A" stroke-width="1.5"/>
+            <rect x="86" y="20" width="28" height="22" fill="#B8860B" rx="4"/>
+            <text x="100" y="30" font-size="6" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">1990s</text>
+            <text x="100" y="38" font-size="5.5" fill="white" font-family="Arial" text-anchor="middle">Internet</text>
+            <line x1="100" y1="42" x2="100" y2="48" stroke="#B8860B" stroke-width="1.5"/>
+            <rect x="121" y="68" width="28" height="22" fill="#1A3A8F" rx="4"/>
+            <text x="135" y="78" font-size="6" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">2020s</text>
+            <text x="135" y="86" font-size="5.5" fill="white" font-family="Arial" text-anchor="middle">AI Era</text>
+            <line x1="135" y1="62" x2="135" y2="68" stroke="#1A3A8F" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a plan that shows the times at which particular events are expected to happen, or a representation of the order in which things happened or will happen.</p>
+          <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">The teacher drew a timeline on the board to show the key events of World War II.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">12</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;letter-spacing:0.5px;">Research</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">noun</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:160px;height:110px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="110" fill="#e8edf8" rx="8"/>
+            <rect x="10" y="72" width="80" height="12" fill="#CC1F27" rx="3"/>
+            <rect x="14" y="60" width="76" height="12" fill="#1A3A8F" rx="3"/>
+            <rect x="10" y="48" width="80" height="12" fill="#1A6B3A" rx="3"/>
+            <text x="50" y="80" font-size="6" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">HISTORY</text>
+            <text x="52" y="68" font-size="6" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">SCIENCE</text>
+            <text x="50" y="56" font-size="6" fill="white" font-family="Arial" font-weight="bold" text-anchor="middle">ENGLISH</text>
+            <circle cx="115" cy="50" r="28" fill="none" stroke="#F5C300" stroke-width="4"/>
+            <circle cx="115" cy="50" r="23" fill="rgba(255,255,255,0.9)"/>
+            <rect x="100" y="40" width="30" height="4" rx="2" fill="#1A3A8F"/>
+            <rect x="100" y="48" width="26" height="3" rx="1.5" fill="#ccc"/>
+            <rect x="100" y="54" width="28" height="3" rx="1.5" fill="#ccc"/>
+            <rect x="100" y="60" width="22" height="3" rx="1.5" fill="#ccc"/>
+            <line x1="134" y1="68" x2="150" y2="84" stroke="#F5C300" stroke-width="5" stroke-linecap="round"/>
+            <line x1="134" y1="68" x2="150" y2="84" stroke="#B8860B" stroke-width="3" stroke-linecap="round"/>
+            <rect x="15" y="88" width="50" height="16" fill="white" rx="3" stroke="#ddd" stroke-width="1"/>
+            <rect x="20" y="92" width="30" height="2" rx="1" fill="#bbb"/>
+            <rect x="20" y="97" width="24" height="2" rx="1" fill="#bbb"/>
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#222;line-height:1.7;margin:0 0 10px;">a detailed study of a subject, especially in order to discover new information or reach a new understanding.</p>
+          <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+            <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;letter-spacing:0.5px;">Example · </span>
+            <span style="font-size:12.5px;color:#444;font-style:italic;">She spent months doing research for her article on ancient civilizations.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <!-- WORD 2: SENSITIVE -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">2</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">SENSITIVE</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/ˈsen.sɪ.tɪv/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Able to understand the feelings of other people and aware of their needs; also easily affected emotionally.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"He is so <strong>sensitive</strong> that even small comments can hurt his feelings."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🧠 empathetic</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ insensitive</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 3: SENSIBLE -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">3</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">SENSIBLE</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/ˈsen.sɪ.bl̩/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Showing good judgement and reason; practical and wise. <em>(⚠️ Not the same as "sensitive"!)</em></p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"It was <strong>sensible</strong> of her to study in advance instead of waiting for the last day."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🧩 reasonable</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">💡 practical</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ foolish</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 4: OPEN-MINDED -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">4</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">OPEN-MINDED</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/ˌəʊ.pənˈmaɪn.dɪd/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Willing to consider ideas and opinions that are different from your own.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"A good teacher is <strong>open-minded</strong> and always listens to different perspectives."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🌍 tolerant</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ narrow-minded</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 5: BRIGHT -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">5</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">BRIGHT</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/braɪt/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Clever and quick to learn; intelligent.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"She is a <strong>bright</strong> student who always understands new concepts quickly."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🧠 clever</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">✨ sharp</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ dull</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 6: CHARMING -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">6</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">CHARMING</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/ˈtʃɑː.mɪŋ/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Very pleasing or attractive in a way that makes people like you.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"Everyone liked the new student — he was incredibly <strong>charming</strong> and funny."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">😊 delightful</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">✨ captivating</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ unpleasant</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 7: ENTHUSIASTIC -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">7</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">ENTHUSIASTIC</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/ɪnˌθjuː.ziˈæs.tɪk/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Feeling or showing a lot of excitement and interest about something.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"The team was <strong>enthusiastic</strong> about the project and worked extra hours to finish it."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🔥 passionate</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">⚡ eager</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ apathetic</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 8: AMBITIOUS -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">8</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">AMBITIOUS</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/æmˈbɪʃ.əs/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Having a strong desire to be successful, powerful, or rich.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"She is very <strong>ambitious</strong> and wants to become a doctor by the time she's 25."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🎯 driven</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">💪 determined</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ unmotivated</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 9: SOCIABLE -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">9</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">SOCIABLE</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/ˈsəʊ.ʃə.bl̩/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Friendly and enjoying spending time with other people.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"He's very <strong>sociable</strong> and makes friends wherever he goes."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🤝 outgoing</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">👥 friendly</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ withdrawn</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 10: SELF-CONFIDENT -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">10</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">SELF-CONFIDENT</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/ˌself ˈkɒn.fɪ.dənt/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Feeling sure about your own ability to do things and be successful.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"She walked into the interview <strong>self-confident</strong> and answered every question without hesitation."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">💎 assured</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🦁 bold</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ insecure</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 11: RESPECTFUL -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">11</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">RESPECTFUL</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/rɪˈspekt.fəl/ · adjective</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Showing polite feelings of admiration and care towards other people.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"The students were very <strong>respectful</strong> during the assembly, listening quietly."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🙏 polite</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🎓 considerate</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ rude</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WORD 12: TEAM PLAYER -->
-  <div style="background:white;border-radius:14px;box-shadow:0 2px 12px rgba(26,58,143,0.09);margin-bottom:16px;overflow:hidden;border:1px solid rgba(26,58,143,0.08);">
-    <div class="vocab-card-header" style="background:linear-gradient(90deg,#1A3A8F,#2451c7);color:white;" onclick="toggleCard(this)">
-      <div style="width:34px;height:34px;background:rgba(255,255,255,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;">12</div>
-      <div>
-        <div style="font-size:18px;font-weight:900;letter-spacing:0.5px;">TEAM PLAYER</div>
-        <div style="font-size:11px;opacity:0.8;font-weight:600;">/ˈtiːm ˌpleɪ.ər/ · noun phrase</div>
-      </div>
-      <span class="vocab-chevron">▼</span>
-    </div>
-    <div class="vocab-card-body" style="padding:0 20px;display:flex;gap:20px;align-items:flex-start;">
-      <div style="flex:1;min-width:0;">
-        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;letter-spacing:1px;">📖 Definition</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#2d3a5e;">Someone who works well as part of a group and puts the group's goals before their own.</p>
-        </div>
-        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:12px;">
-          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;letter-spacing:1px;">💬 Example</span>
-          <p style="margin:6px 0 0;font-size:14px;color:#5a4000;font-style:italic;">"We need a <strong>team player</strong> for this project — someone who collaborates well with others."</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🤝 cooperative</span>
-          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🏆 collaborative</span>
-          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ self-centered</span>
-        </div>
-      </div>
-    </div>
+  <!-- PRACTICE STRIP -->
+  <div style="background:#1A1A2E;border-radius:12px;padding:22px 28px;text-align:center;">
+    <div style="font-size:16px;font-weight:900;color:#F5C300;margin-bottom:8px;">🧩 Practice tip</div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation of each word. Then try to use at least <strong style="color:#F5C300;">5 of these words</strong> in your Speaking Project presentation!</p>
+    <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">🔗 dictionary.cambridge.org</a>
   </div>
 
 </div>
 </section>
+
+<!-- ══ VOCABULARY #2 ══ -->
+<section id="vocab-2" class="vocab-section">
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
+  <div style="background:linear-gradient(135deg,#1A3A8F 0%,#0d2260 55%,#CC1F27 100%);border-radius:14px;overflow:hidden;margin-bottom:28px;position:relative;">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(-55deg,transparent,transparent 24px,rgba(255,255,255,0.025) 24px,rgba(255,255,255,0.025) 48px);"></div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;padding:28px 36px 0;position:relative;z-index:1;">
+      <div style="padding-bottom:28px;">
+        <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#F5C300;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Language Arts · 8th Grade · 2026</div>
+        <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">📖 Vocabulary <span style="color:#F5C300;">#2</span></h1>
+        <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">The Language of Time &amp; Sequence</div>
+        <div style="font-size:12px;color:rgba(212,228,255,0.8);margin-top:5px;">11 words · Cambridge Dictionary Definitions · Time Conjunctions</div>
+        <div style="margin-top:16px;"><div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">⏱️ Grammar Unit · Time Connectors</div></div>
+      </div>
+      <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" style="width:140px;height:140px;filter:drop-shadow(0 8px 20px rgba(0,0,0,0.35));">
+        <circle cx="80" cy="80" r="72" fill="#0d2260" stroke="#F5C300" stroke-width="4"/>
+        <circle cx="80" cy="80" r="65" fill="#1A3A8F"/>
+        <line x1="80" y1="18" x2="80" y2="28" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+        <line x1="80" y1="132" x2="80" y2="142" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+        <line x1="18" y1="80" x2="28" y2="80" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+        <line x1="132" y1="80" x2="142" y2="80" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+        <line x1="80" y1="80" x2="52" y2="46" stroke="white" stroke-width="4" stroke-linecap="round"/>
+        <line x1="80" y1="80" x2="106" y2="44" stroke="#F5C300" stroke-width="3" stroke-linecap="round"/>
+        <line x1="80" y1="80" x2="80" y2="30" stroke="#CC1F27" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="80" cy="80" r="5" fill="white"/>
+        <circle cx="80" cy="80" r="3" fill="#CC1F27"/>
+      </svg>
+    </div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+  </div>
+
+  <div style="background:#FFFDF0;border:1.5px solid #F5C300;border-left:6px solid #F5C300;border-radius:8px;padding:16px 22px;margin-bottom:24px;font-size:13.5px;color:#333;line-height:1.8;">
+    <strong style="color:#1A3A8F;">💡 How to study this vocabulary:</strong> These words connect two actions or events in time. Study the <strong>meaning</strong>, then look at the <strong>example sentence</strong> and try to write your own. Pay attention to which action comes <em>first</em> and which comes <em>second</em>!
+  </div>
+
+  <div style="text-align:right;margin-bottom:8px;">
+    <button onclick="toggleAllCards(this)" style="background:none;border:1.5px solid #1A3A8F;border-radius:20px;color:#1A3A8F;font-size:11px;font-weight:800;padding:5px 14px;cursor:pointer;" data-state="closed">▼ Abrir todas</button>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+
+    <!-- AFTER -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">1</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">After</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">following in time; at a later time than something else.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">She went to bed <strong>after</strong> she finished her homework.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AS -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">2</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">As</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">at the same time that another event is happening; while.</p>
+        <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">He listened to music <strong>as</strong> he walked to school.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AS SOON AS -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">3</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">As soon as</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">immediately when something happens; at the moment that.</p>
+        <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>As soon as</strong> the bell rang, the students ran out of the classroom.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEFORE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">4</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Before</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">earlier in time than something else.</p>
+        <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">You should always wash your hands <strong>before</strong> you eat.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BY THE TIME -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">5</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">By the time</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">when something has happened or will have happened; not later than when.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>By the time</strong> he arrived at the party, everyone had already left.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVERY TIME -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">6</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Every time</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">each time that something happens; on each occasion that.</p>
+        <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>Every time</strong> it rains, she takes her umbrella to school.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SINCE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">7</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Since</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">from a time in the past until now; continuously from a past event to the present.</p>
+        <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">She has lived in this city <strong>since</strong> she was a child.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- UNTIL -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">8</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Until</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">up to the point in time or the event mentioned; continuing up to a certain time.</p>
+        <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">They played outside <strong>until</strong> it got dark.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHEN -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">9</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">When</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">at the time that; at or during the time that an event happens.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>When</strong> I grow up, I want to be a teacher.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHENEVER -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">10</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Whenever</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">every time or at any time that something happens; no matter when.</p>
+        <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;"><strong>Whenever</strong> she feels sad, she calls her best friend.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHILE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">11</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">While</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">conjunction</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">during the time that something else is happening; at the same time as a longer action or situation.</p>
+        <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">Mom was cooking dinner <strong>while</strong> Dad was watching TV.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:#1A1A2E;border-radius:12px;padding:22px 28px;text-align:center;">
+    <div style="font-size:16px;font-weight:900;color:#F5C300;margin-bottom:8px;">🧩 Practice tip</div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation. Then use at least <strong style="color:#F5C300;">5 of these conjunctions</strong> to write sentences about your daily routine!</p>
+    <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">🔗 dictionary.cambridge.org</a>
+  </div>
+</div>
+</section>
+
+<!-- ══ VOCABULARY #3 ══ -->
+<section id="vocab-3" class="vocab-section">
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
+  <div style="background:linear-gradient(135deg,#1A3A8F 0%,#0d2260 55%,#CC1F27 100%);border-radius:14px;overflow:hidden;margin-bottom:28px;position:relative;">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(-55deg,transparent,transparent 24px,rgba(255,255,255,0.025) 24px,rgba(255,255,255,0.025) 48px);"></div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+    <div style="padding:28px 36px;position:relative;z-index:1;">
+      <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#F5C300;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Language Arts · 8th Grade · 2026</div>
+      <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">📖 Vocabulary <span style="color:#F5C300;">#3</span></h1>
+      <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">Personal Qualities</div>
+      <div style="font-size:12px;color:rgba(212,228,255,0.8);margin-top:5px;">10 words · Cambridge Dictionary Definitions · Character Traits</div>
+      <div style="margin-top:16px;"><div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">🌟 Describing People · Personality</div></div>
+    </div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+  </div>
+
+  <div style="background:#FFFDF0;border:1.5px solid #F5C300;border-left:6px solid #F5C300;border-radius:8px;padding:16px 22px;margin-bottom:24px;font-size:13.5px;color:#333;line-height:1.8;">
+    <strong style="color:#1A3A8F;">💡 How to study this vocabulary:</strong> These words describe <strong>personality traits</strong>. Study each definition and example, then try to describe yourself or someone you know using at least <strong>5 of these words</strong>!
+  </div>
+
+  <div style="text-align:right;margin-bottom:8px;">
+    <button onclick="toggleAllCards(this)" style="background:none;border:1.5px solid #1A3A8F;border-radius:20px;color:#1A3A8F;font-size:11px;font-weight:800;padding:5px 14px;cursor:pointer;" data-state="closed">▼ Abrir todas</button>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">1</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Determined</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">having a strong will to do something and not allowing anyone or anything to stop you.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">She was <strong>determined</strong> to pass all her exams, so she studied every day.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">2</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Easy-going</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">relaxed and not easily worried or upset; happy to accept things as they are.</p>
+        <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">My teacher is very <strong>easy-going</strong> — she never gets angry about small mistakes.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">3</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Hardworking</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">always putting a lot of effort and energy into your work.</p>
+        <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">He is such a <strong>hardworking</strong> student that he stays in the library every afternoon.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">4</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Impatient</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">wanting something to happen soon; easily annoyed by delays or mistakes.</p>
+        <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">She became <strong>impatient</strong> while waiting for the bus that was one hour late.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">5</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Motivated</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">feeling enthusiastic and eager to do something; having a reason to act.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">The coach kept the team <strong>motivated</strong> by celebrating every small victory.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">6</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Passionate</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">having or showing very strong feelings or enthusiasm about something.</p>
+        <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">She is <strong>passionate</strong> about music and practises the guitar for hours every day.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">7</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Shy</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">nervous or embarrassed in the company of other people; not liking to talk or be noticed.</p>
+        <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">He was so <strong>shy</strong> that he never raised his hand in class, even when he knew the answer.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">8</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Sociable</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">enjoying being with other people; friendly and easy to talk to.</p>
+        <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">Maria is very <strong>sociable</strong> and always makes new friends at school events.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">9</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Strict</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">demanding that rules are obeyed; not allowing much freedom.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">Our maths teacher is very <strong>strict</strong> — she never accepts homework late.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">10</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Talented</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">adjective</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">having a natural ability to do something well.</p>
+        <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">He is a <strong>talented</strong> artist who won first prize in the school drawing competition.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:#1A1A2E;border-radius:12px;padding:22px 28px;text-align:center;">
+    <div style="font-size:16px;font-weight:900;color:#F5C300;margin-bottom:8px;">🧩 Practice tip</div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation. Then use at least <strong style="color:#F5C300;">5 of these words</strong> in your next writing task!</p>
+    <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">🔗 dictionary.cambridge.org</a>
+  </div>
+</div>
+</section>
+
+<!-- ══ VOCABULARY #4 ══ -->
+<section id="vocab-4" class="vocab-section">
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
+  <div style="background:linear-gradient(135deg,#1A3A8F 0%,#0d2260 55%,#CC1F27 100%);border-radius:14px;overflow:hidden;margin-bottom:28px;position:relative;">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(-55deg,transparent,transparent 24px,rgba(255,255,255,0.025) 24px,rgba(255,255,255,0.025) 48px);"></div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+    <div style="padding:28px 36px;position:relative;z-index:1;">
+      <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#F5C300;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Language Arts · 8th Grade · 2026</div>
+      <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">📖 Vocabulary <span style="color:#F5C300;">#4</span></h1>
+      <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">Phrasal Verbs: Making Progress</div>
+      <div style="font-size:12px;color:rgba(212,228,255,0.8);margin-top:5px;">9 phrasal verbs · Cambridge Dictionary Definitions · Visual Examples</div>
+      <div style="margin-top:16px;"><div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">⚡ Phrasal Verbs · Verb + Particle</div></div>
+    </div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+  </div>
+
+  <div style="background:#FFFDF0;border:1.5px solid #F5C300;border-left:6px solid #F5C300;border-radius:8px;padding:16px 22px;margin-bottom:24px;font-size:13.5px;color:#333;line-height:1.8;">
+    <strong style="color:#1A3A8F;">💡 What is a phrasal verb?</strong> A <strong>phrasal verb</strong> is a verb + a particle (preposition or adverb) that together create a <em>new meaning</em>. For example: <em>give</em> ≠ <em>give up</em>! Study each one carefully.
+  </div>
+
+  <div style="text-align:right;margin-bottom:8px;">
+    <button onclick="toggleAllCards(this)" style="background:none;border:1.5px solid #1A3A8F;border-radius:20px;color:#1A3A8F;font-size:11px;font-weight:800;padding:5px 14px;cursor:pointer;" data-state="closed">▼ Abrir todas</button>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">1</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Bring together</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to cause people to meet or be united, especially to work on something or achieve a goal.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">The project helped to <strong>bring together</strong> students from different schools.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">2</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Count on</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to depend on someone or expect something to happen; to trust or rely on.</p>
+        <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">You can always <strong>count on</strong> her — she never lets her friends down.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">3</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Get along</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to have a friendly relationship with someone; to be on good terms.</p>
+        <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">The two brothers didn't <strong>get along</strong> at first, but now they are best friends.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">4</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Give up</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to stop doing or trying to do something; to stop trying to achieve something.</p>
+        <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">Don't <strong>give up</strong> — keep practising and you will improve!</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">5</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Keep up</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to continue at the same pace or level; to not fall behind others.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">She ran as fast as she could to <strong>keep up</strong> with the rest of the team.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">6</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Pass on</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to give or tell something to another person; to transmit information, knowledge, or objects.</p>
+        <div style="background:white;border-left:3px solid #CC1F27;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">Could you <strong>pass on</strong> this message to the teacher, please?</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">7</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Set up</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to start or create something new, such as a business, organisation, or system.</p>
+        <div style="background:white;border-left:3px solid #1A6B3A;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">They decided to <strong>set up</strong> a study group to prepare for the exams.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">8</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Sign up</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to officially join or register for something, such as a course, team, or service.</p>
+        <div style="background:white;border-left:3px solid #B8860B;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">I want to <strong>sign up</strong> for the after-school drama club this term.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">9</div>
+        <div style="font-size:18px;font-weight:900;color:#F5C300;">Turn into</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;">phrasal verb</div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <p style="font-size:13px;color:#222;margin:0 0 10px;">to change and become something different; to transform from one thing to another.</p>
+        <div style="background:white;border-left:3px solid #1A3A8F;border-radius:0 6px 6px 0;padding:8px 12px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">Example · </span>
+          <span style="font-size:12.5px;color:#444;font-style:italic;">The caterpillar will eventually <strong>turn into</strong> a beautiful butterfly.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:#1A1A2E;border-radius:12px;padding:22px 28px;text-align:center;">
+    <div style="font-size:16px;font-weight:900;color:#F5C300;margin-bottom:8px;">🧩 Practice tip</div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation. Then use at least <strong style="color:#F5C300;">5 of these words</strong> in your next writing task!</p>
+    <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">🔗 dictionary.cambridge.org</a>
+  </div>
+</div>
+</section>
+
+
+<!-- ══ VOCABULARY #5 ══ -->
+<section id="vocab-5" class="vocab-section">
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:880px;margin:0 auto;color:#1A1A2E;line-height:1.7;">
+
+  <!-- HERO -->
+  <div style="background:linear-gradient(135deg,#1A3A8F 0%,#0d2260 55%,#CC1F27 100%);border-radius:14px;overflow:hidden;margin-bottom:28px;position:relative;">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(-55deg,transparent,transparent 24px,rgba(255,255,255,0.025) 24px,rgba(255,255,255,0.025) 48px);"></div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+    <div style="padding:28px 36px;position:relative;z-index:1;">
+      <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#F5C300;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Language Arts · 8th Grade · 2026</div>
+      <h1 style="font-size:36px;font-weight:900;color:white;margin:0 0 4px;line-height:1.1;">📖 Vocabulary <span style="color:#F5C300;">#5</span></h1>
+      <div style="font-size:15px;color:rgba(255,255,255,0.8);font-weight:600;margin-top:8px;">Personality Adjectives II</div>
+      <div style="font-size:12px;color:rgba(212,228,255,0.8);margin-top:5px;">12 words · Cambridge Dictionary Definitions · Character Traits</div>
+      <div style="margin-top:16px;">
+        <div style="display:inline-block;background:rgba(245,195,0,0.15);border:1px solid rgba(245,195,0,0.35);border-radius:6px;padding:6px 14px;font-size:12px;color:#F5C300;font-weight:700;">🗣️ Speaking Unit · 2026</div>
+      </div>
+    </div>
+    <div style="height:5px;background:linear-gradient(90deg,#F5C300,#ffde59,#F5C300);"></div>
+  </div>
+
+  <!-- INTRO TIP -->
+  <div style="background:#FFFDF0;border:1.5px solid #F5C300;border-left:6px solid #F5C300;border-radius:8px;padding:16px 22px;margin-bottom:24px;font-size:13.5px;color:#333;line-height:1.8;">
+    <strong style="color:#1A3A8F;">💡 How to study this vocabulary:</strong> These adjectives describe <strong>personality traits</strong>. Study each definition and example sentence, then try to use at least <strong>5 of these words</strong> to describe yourself or someone you know!
+  </div>
+
+  <!-- OPEN ALL BUTTON -->
+  <div style="text-align:right;margin-bottom:8px;">
+    <button onclick="toggleAllCards(this)" style="background:none;border:1.5px solid #1A3A8F;border-radius:20px;color:#1A3A8F;font-size:11px;font-weight:800;padding:5px 14px;cursor:pointer;transition:all 0.2s;" data-state="closed">▼ Abrir todas</button>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+
+    <!-- 1. AFFECTIONATE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">1</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">AFFECTIONATE</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/əˈfek.ʃən.ət/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Showing feelings of liking or love for someone in a gentle and kind way.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">She is very <strong>affectionate</strong> with her younger siblings — always hugging them.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">💛 warm</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🤗 loving</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: cold</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. SENSITIVE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">2</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">SENSITIVE</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/ˈsen.sɪ.tɪv/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Able to understand the feelings of other people and easily affected emotionally by what people say or do.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">He is so <strong>sensitive</strong> that even small comments can hurt his feelings.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🧠 empathetic</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: insensitive</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. SENSIBLE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">3</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">SENSIBLE</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/ˈsen.sɪ.bl̩/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Showing good judgement and reason; practical and wise. <em>⚠️ Not the same as "sensitive"!</em></span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">It was <strong>sensible</strong> of her to study in advance instead of waiting for the last day.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🧩 reasonable</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">💡 practical</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: foolish</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. OPEN-MINDED -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">4</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">OPEN-MINDED</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/ˌəʊ.pənˈmaɪn.dɪd/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Willing to consider ideas and opinions that are new or different from your own.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">A good teacher is <strong>open-minded</strong> and always listens to different perspectives.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🌍 tolerant</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: narrow-minded</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. BRIGHT -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">5</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">BRIGHT</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/braɪt/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Clever and quick to learn; intelligent.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">She is a <strong>bright</strong> student who always understands new concepts quickly.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🧠 clever</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">✨ sharp</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: dull</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. CHARMING -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">6</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">CHARMING</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/ˈtʃɑː.mɪŋ/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Very pleasing or attractive in a way that makes people like you.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">Everyone liked the new student — he was incredibly <strong>charming</strong> and funny.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">😊 delightful</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: unpleasant</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. ENTHUSIASTIC -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">7</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">ENTHUSIASTIC</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/ɪnˌθjuː.ziˈæs.tɪk/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Feeling or showing a lot of excitement and interest about something.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">The team was <strong>enthusiastic</strong> about the project and worked extra hours to finish it.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🔥 passionate</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">⚡ eager</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: apathetic</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. AMBITIOUS -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">8</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">AMBITIOUS</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/æmˈbɪʃ.əs/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Having a strong desire to be successful, powerful, or rich.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">She is very <strong>ambitious</strong> and wants to become a doctor by the time she is 25.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🎯 driven</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">💪 determined</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: unmotivated</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. SOCIABLE -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A3A8F;">
+      <div class="vocab-card-header" style="background:#1A3A8F;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">9</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">SOCIABLE</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/ˈsəʊ.ʃə.bl̩/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8EDF8;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#1A3A8F;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Friendly and enjoying spending time with other people.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">He is very <strong>sociable</strong> and makes friends wherever he goes.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🤝 outgoing</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">👥 friendly</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: withdrawn</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. SELF-CONFIDENT -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #CC1F27;">
+      <div class="vocab-card-header" style="background:#CC1F27;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">10</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">SELF-CONFIDENT</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/ˌself ˈkɒn.fɪ.dənt/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FDEAEA;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#CC1F27;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Feeling sure about your own ability to do things and be successful.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">She walked into the interview <strong>self-confident</strong> and answered every question without hesitation.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">💎 assured</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🦁 bold</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: insecure</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. RESPECTFUL -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #1A6B3A;">
+      <div class="vocab-card-header" style="background:#1A6B3A;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">11</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">RESPECTFUL</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/rɪˈspekt.fəl/ · adjective</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#E8F5E9;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#1A6B3A;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Showing polite feelings of admiration and care towards other people.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">The students were very <strong>respectful</strong> during the assembly, listening quietly.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🙏 polite</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🎓 considerate</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: rude</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. TEAM PLAYER -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top:4px solid #B8860B;">
+      <div class="vocab-card-header" style="background:#B8860B;" onclick="toggleCard(this)">
+        <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:white;flex-shrink:0;">12</div>
+        <div><div style="font-size:18px;font-weight:900;color:#F5C300;">TEAM PLAYER</div><div style="font-size:11px;color:rgba(255,255,255,0.7);font-style:italic;">/ˈtiːm ˌpleɪ.ər/ · noun phrase</div></div>
+        <div class="vocab-chevron">▼</div>
+      </div>
+      <div class="vocab-card-body" style="background:#FFFBE6;padding:12px 16px;">
+        <div style="background:#f0f4ff;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#B8860B;text-transform:uppercase;">📖 Definition · </span>
+          <span style="font-size:13px;color:#2d3a5e;">Someone who works well as part of a group and puts the group's goals before their own.</span>
+        </div>
+        <div style="background:#fff8e1;border-radius:8px;padding:12px 16px;margin-bottom:10px;">
+          <span style="font-size:11px;font-weight:800;color:#b8860b;text-transform:uppercase;">💬 Example · </span>
+          <span style="font-size:13px;color:#5a4000;font-style:italic;">We need a <strong>team player</strong> for this project — someone who collaborates well with others.</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🤝 cooperative</span>
+          <span style="background:#e8f5e9;color:#2e7d32;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">🏆 collaborative</span>
+          <span style="background:#fce4ec;color:#c62828;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;">❌ Opposite: self-centered</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PRACTICE STRIP -->
+  <div style="background:#1A1A2E;border-radius:12px;padding:22px 28px;text-align:center;">
+    <div style="font-size:16px;font-weight:900;color:#F5C300;margin-bottom:8px;">🧩 Practice tip</div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 12px;line-height:1.7;">Use <strong style="color:white;">Cambridge Dictionary online</strong> to listen to the pronunciation of each word. Then try to describe yourself or a classmate using at least <strong style="color:#F5C300;">5 of these adjectives</strong>!</p>
+    <a href="https://dictionary.cambridge.org/es/" target="_blank" style="display:inline-block;background:#F5C300;color:#1A1A2E;font-weight:800;font-size:13px;padding:10px 24px;border-radius:20px;text-decoration:none;">🔗 dictionary.cambridge.org</a>
+  </div>
+
+</div>
+</section>
+
+
+<script>
+
+  
+  function toggleAllCards(btn) {
+    var section = btn.closest('.vocab-section');
+    var headers = section.querySelectorAll('.vocab-card-header');
+    var bodies  = section.querySelectorAll('.vocab-card-body');
+    var opening = btn.getAttribute('data-state') === 'closed';
+    headers.forEach(function(h){ h.classList.toggle('open', opening); });
+    bodies.forEach(function(b){  b.classList.toggle('open', opening); });
+    btn.setAttribute('data-state', opening ? 'open' : 'closed');
+    btn.innerHTML = opening ? '▲ Cerrar todas' : '▼ Abrir todas';
+    btn.style.borderColor = opening ? '#CC1F27' : '#1A3A8F';
+    btn.style.color        = opening ? '#CC1F27' : '#1A3A8F';
+  }
+
+  function toggleCard(header) {
+    var body = header.nextElementSibling;
+    var maxTries = 3;
+    while (body && !body.classList.contains('vocab-card-body') && maxTries-- > 0) {
+      body = body.nextElementSibling;
+    }
+    if (!body) return;
+    var isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    header.classList.toggle('open', !isOpen);
+  }
+
+  function showVocab(num, btn) {
+    document.querySelectorAll('.vocab-section').forEach(function(s){ s.classList.remove('visible'); });
+    document.getElementById('vocab-' + num).classList.add('visible');
+    document.querySelectorAll('.nav-btn:not(.coming-soon)').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
